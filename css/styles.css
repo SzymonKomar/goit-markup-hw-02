@@ -1,0 +1,59 @@
+:root {
+ background-color: #e5e5e5;
+ --text-color: #212121;
+ --text-color-g: #757575;
+ --blue-color: #2196f3;
+ --grey-b-color: #f5f4fa;
+}
+
+.whole-site {
+ font-family: "Roboto", sans-serif;
+}
+.nav-list {
+ font-weight: 500;
+}
+.name {
+ font-family: "Raleway", sans-serif;
+ font-weight: 700;
+}
+[title="mailh"] {
+ font-weight: 500;
+}
+[title="phoneh"] {
+ font-weight: 500;
+}
+.button1 {
+ background-color: var(--grey-b-color);
+ color: var(--text-color);
+}
+button:hover {
+ transition-delay: 0ms;
+ background-color: var(--blue-color);
+ color: white;
+}
+a:hover {
+ color: var(--blue-color);
+}
+.caption-header {
+ font-weight: 700;
+ color: var(--text-color);
+}
+.caption-p {
+ font-weight: 400;
+ color: var(--text-color-g);
+}
+.address {
+ font-weight: 400;
+}
+[title="mailf"] {
+ font-weight: 400;
+}
+[title="phonef"] {
+ font-weight: 400;
+}
+a:focus {
+ background-color: var(--blue-color);
+}
+button:focus {
+ background-color: var(--blue-color);
+}
