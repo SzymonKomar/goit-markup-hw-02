@@ -8,23 +8,30 @@
 
 .whole-site {
  font-family: "Roboto", sans-serif;
+ color: #212121;
 }
 .nav-list {
  font-weight: 500;
+ line-height: 1, 14em;
 }
 .name {
  font-family: "Raleway", sans-serif;
  font-weight: 700;
+ line-height: 1, 15em;
 }
 [title="mailh"] {
  font-weight: 500;
+ line-height: 1, 14em;
 }
 [title="phoneh"] {
  font-weight: 500;
+ line-height: 1, 14em;
 }
 .button1 {
  background-color: var(--grey-b-color);
  color: var(--text-color);
+ cursor: pointer;
+ line-height: 26px;
 }
 button:hover {
  transition-delay: 0ms;
@@ -37,19 +44,20 @@ a:hover {
 .caption-header {
  font-weight: 700;
  color: var(--text-color);
+ line-height: 2em;
 }
 .caption-p {
- font-weight: 400;
  color: var(--text-color-g);
+ line-height: 1, 85em;
 }
 .address {
- font-weight: 400;
+ line-height: 1, 71em;
 }
 [title="mailf"] {
- font-weight: 400;
+ line-height: 1, 71em;
 }
 [title="phonef"] {
- font-weight: 400;
+ line-height: 1, 71em;
 }
 a:focus {
  background-color: var(--blue-color);
