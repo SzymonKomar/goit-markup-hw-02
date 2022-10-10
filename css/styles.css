@@ -22,10 +22,12 @@
 [title="mailh"] {
  font-weight: 500;
  line-height: 1, 14em;
+ color: var(--text-color-g);
 }
 [title="phoneh"] {
  font-weight: 500;
  line-height: 1, 14em;
+ color: var(--text-color-g);
 }
 .button1 {
  background-color: var(--grey-b-color);
@@ -55,9 +57,11 @@ a:hover {
 }
 [title="mailf"] {
  line-height: 1, 71em;
+ color: var(--text-color-g);
 }
 [title="phonef"] {
  line-height: 1, 71em;
+ color: var(--text-color-g);
 }
 a:focus {
  background-color: var(--blue-color);
