@@ -69,6 +69,7 @@ a:hover {
 }
 .address {
  line-height: 1, 71em;
+ color: var(--white-color);
 }
 [title="mailf"] {
  line-height: 1, 71em;
