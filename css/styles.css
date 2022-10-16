@@ -43,6 +43,8 @@
  cursor: pointer;
  line-height: 1, 625em;
  font-weight: 500;
+ border: none;
+ border-radius: 4px;
 }
 button:hover {
  transition-delay: 0ms;
@@ -55,9 +57,17 @@ button:hover {
  cursor: pointer;
  line-height: 1, 875em;
  font-weight: 700;
+ border: none;
+ border-radius: 4px;
+}
+a:visited {
+ color: var(--text-color);
 }
 a:hover {
  color: var(--blue-color);
+}
+a:link {
+ text-decoration: none;
 }
 .caption-header {
  font-weight: 700;
