@@ -20,14 +20,17 @@
  font-family: "Roboto", sans-serif;
  font-weight: 400;
  color: var(--text-color);
- background-color: var(--background-color);
 }
 ul {
  list-style: none;
 }
 .container {
- max-width: 1200px;
+ max-width: 1600px;
  margin: auto;
+}
+section {
+ padding-top: 94px;
+ padding-bottom: 94px;
 }
 
 .nav-bar {
@@ -58,15 +61,27 @@ ul {
 .main-h1 h1 {
  display: column;
  flex-wrap: wrap;
- text-align: center;
- padding-top: 200px;
+ padding-top: 106px;
+ justify-content: space-between;
+ text-indent: -18px;
 }
 .main-h1 .button2 {
  display: block;
  height: 50px;
  width: 200px;
- margin-top: 30px;
 }
+.advantages {
+ display: flex;
+ justify-content: space-between;
+ padding-left: 180px;
+ padding-right: 180px;
+ margin: 0px;
+}
+.advantages .advantages-p {
+ display: inline-flex;
+ margin: 0px;
+}
+
 .name {
  font-family: "Raleway", sans-serif;
  font-weight: 700;
@@ -81,7 +96,19 @@ ul {
  line-height: 1, 14em;
  color: var(--text-color-g);
 }
-
+.projects-h2 {
+ display: flex;
+ margin-bottom: auto;
+ justify-content: center;
+ margin-bottom: 50px;
+ margin-top: 0px;
+}
+.projects-images {
+ display: flex;
+ gap: 10px;
+ flex-basis: calc((100%-20px) / 3);
+ justify-content: center;
+}
 .button1 {
  background-color: var(--grey-b-color);
  color: var(--text-color);
