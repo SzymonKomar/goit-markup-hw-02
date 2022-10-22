@@ -16,11 +16,8 @@
  --main-h1-color: #2f303a;
 }
 
-.whole-site {
- font-family: "Roboto", sans-serif;
- font-weight: 400;
- color: var(--text-color);
-}
+/*Początek index.html*/
+/* Ustawienia globane */
 ul {
  list-style: none;
 }
@@ -32,7 +29,33 @@ section {
  padding-top: 94px;
  padding-bottom: 94px;
 }
-
+.whole-site {
+ font-family: "Roboto", sans-serif;
+ font-weight: 400;
+ color: var(--text-color);
+}
+button:hover {
+ transition-delay: 0ms;
+ background-color: var(--blue-color);
+ color: var(--white-color);
+}
+a:visited {
+ color: var(--text-color);
+}
+a:hover {
+ color: var(--blue-color);
+}
+a:link {
+ text-decoration: none;
+}
+a:focus {
+ background-color: var(--blue-color);
+}
+button:focus {
+ background-color: var(--blue-color);
+}
+/*-------------------- */
+/*      Nagłówek      */
 .nav-bar {
  display: flex;
  align-items: center;
@@ -53,6 +76,11 @@ section {
  display: inline-flex;
  gap: 50px;
 }
+.contacts-h {
+ font-weight: 500;
+ line-height: 1, 14em;
+ color: var(--text-color-g);
+}
 .name {
  flex-grow: 1;
 }
@@ -62,6 +90,48 @@ section {
  justify-content: center;
  margin-right: 200px;
 }
+.name {
+ font-family: "Raleway", sans-serif;
+ font-weight: 700;
+ line-height: 1, 15em;
+ color: var(--black-color);
+}
+.Web {
+ color: var(--blue-color);
+}
+/*-------------------*/
+/*      Stopka       */
+.footer {
+ display: flex;
+ background-color: var(--main-h1-color);
+}
+.footer-inbox {
+ margin-left: 215px;
+ margin-top: 60px;
+ margin-bottom: 60px;
+}
+.footer-list {
+ padding-left: 0px;
+ margin: 0;
+ margin-top: 9px;
+}
+.footer-list > *:first-child {
+ padding-bottom: 9px;
+}
+.footer-inbox > *:first-child {
+ display: flex;
+ padding-bottom: 20px;
+}
+.contacts-f {
+ line-height: 1, 71em;
+ color: var(--text-color-g);
+}
+.address {
+ line-height: 1, 71em;
+ color: var(--white-color);
+}
+/*-----------------------*/
+/* Efektywne rozwiązania */
 .main-h1 {
  display: flex;
  background-color: var(--main-h1-color);
@@ -75,13 +145,31 @@ section {
  margin: 0;
  margin-bottom: 30px;
 }
-.main-h1 .button2 {
+.button1 {
  display: flex;
  height: 50px;
  width: 200px;
  align-items: center;
  justify-content: center;
 }
+.button1 {
+ background-color: var(--blue-color);
+ color: var(--white-color);
+ cursor: pointer;
+ line-height: 1, 875em;
+ font-weight: 700;
+ border: none;
+ border-radius: 4px;
+}
+.main-text {
+ display: block;
+ font-weight: 900;
+ line-height: 1, 36em;
+ color: var(--white-color);
+ font-size: 44px;
+}
+/*------------------*/
+/*      Zalety      */
 .advantages {
  display: flex;
  justify-content: center;
@@ -90,7 +178,7 @@ section {
  padding-left: 150px;
  padding-right: 150px;
 }
-.advantages .advantages-p {
+.advantages-list {
  display: inline-flex;
  margin: 0px;
  padding: 0px;
@@ -98,21 +186,16 @@ section {
  align-items: center;
  gap: 30px;
 }
-
-.name {
- font-family: "Raleway", sans-serif;
+.advantages-title {
  font-weight: 700;
- line-height: 1, 15em;
- color: var(--black-color);
+ line-height: 1, 17em;
 }
-.Web {
- color: var(--blue-color);
-}
-.contacts-h {
- font-weight: 500;
- line-height: 1, 14em;
+.advantages-text {
+ line-height: 1, 5em;
  color: var(--text-color-g);
 }
+/*------------------*/
+/* Czym się zajmujemy */
 .projects {
  display: flex;
  flex-direction: column;
@@ -124,6 +207,8 @@ section {
  justify-content: center;
  margin-top: 0px;
  margin-bottom: 50px;
+ font-weight: 700;
+ line-height: 1, 17em;
 }
 .projects-images {
  display: inline-flex;
@@ -131,90 +216,8 @@ section {
  align-items: center;
  gap: 30px;
 }
-.button1 {
- background-color: var(--grey-b-color);
- color: var(--text-color);
- cursor: pointer;
- line-height: 1, 625em;
- font-weight: 500;
- border: none;
- border-radius: 4px;
- width: 121px;
- height: 38px;
- font-size: 16px;
-}
-button:hover {
- transition-delay: 0ms;
- background-color: var(--blue-color);
- color: var(--white-color);
-}
-.button2 {
- background-color: var(--blue-color);
- color: var(--white-color);
- cursor: pointer;
- line-height: 1, 875em;
- font-weight: 700;
- border: none;
- border-radius: 4px;
-}
-a:visited {
- color: var(--text-color);
-}
-a:hover {
- color: var(--blue-color);
-}
-a:link {
- text-decoration: none;
-}
-.caption-header {
- font-weight: 700;
- line-height: 2em;
-}
-.caption-p {
- color: var(--text-color-g);
- line-height: 1, 85em;
-}
-.address {
- line-height: 1, 71em;
- color: var(--white-color);
-}
-.contacts-f {
- line-height: 1, 71em;
- color: var(--text-color-g);
-}
-
-a:focus {
- background-color: var(--blue-color);
-}
-button:focus {
- background-color: var(--blue-color);
-}
-.main-text {
- display: block;
- font-weight: 900;
- line-height: 1, 36em;
- color: var(--white-color);
- font-size: 44px;
-}
-.button-index {
- background-color: var(--grey-b-color);
- color: var(--text-color);
- cursor: pointer;
- line-height: 1, 875em;
- font-weight: 700;
-}
-.adventages-titles {
- font-weight: 700;
- line-height: 1, 17em;
-}
-.advantages-text {
- line-height: 1, 5em;
- color: var(--text-color-g);
-}
-.projects-h2 {
- font-weight: 700;
- line-height: 1, 17em;
-}
+/*--------------------*/
+/*     Zespół        */
 .team-h2 {
  font-weight: 700;
  line-height: 1, 17em;
@@ -249,6 +252,26 @@ button:focus {
  padding: 0px;
  gap: 30px;
 }
+.image-team {
+ margin: 0px;
+ border: solid 1px #eeeeee;
+}
+/*-------------------*/
+/* Koniex index.html */
+/* Początek portfolio.html */
+/* Przyciski */
+.button2 {
+ background-color: var(--grey-b-color);
+ color: var(--text-color);
+ cursor: pointer;
+ border: none;
+ line-height: 1, 625em;
+ font-weight: 500;
+ border-radius: 4px;
+ width: 121px;
+ height: 38px;
+ font-size: 16px;
+}
 .buttons {
  display: flex;
  justify-content: center;
@@ -261,7 +284,28 @@ button:focus {
  margin-top: 94px;
  margin-bottom: 0px;
 }
-.images ul {
+.button-inbox {
+ background-color: var(--grey-b-color);
+ color: var(--text-color);
+ cursor: pointer;
+ line-height: 1, 875em;
+ font-weight: 700;
+}
+/*-------------*/
+/* Produkty */
+.caption-header {
+ font-weight: 700;
+ line-height: 2em;
+ margin-bottom: 20px;
+ margin-top: 0;
+}
+.caption-p {
+ color: var(--text-color-g);
+ line-height: 1, 85em;
+ margin-top: 0px;
+}
+
+.products ul {
  display: flex;
  flex-wrap: wrap;
  padding-left: 30px;
@@ -273,48 +317,20 @@ button:focus {
 .image {
  margin: 0px;
 }
-.image-i {
- margin: 0px;
- border: solid 1px #eeeeee;
-}
+
 .image img {
  display: block;
 }
 
-.caption {
+.products-caption {
  border: solid 1px #eeeeee;
  padding-left: 20px;
  border-top: none;
 }
-.caption-header {
- margin-bottom: 20px;
- margin-top: 0;
-}
-.caption-p {
- margin-top: 0px;
-}
-.images {
+
+.products {
  padding-top: 0px;
  vertical-align: bottom;
 }
-.footer {
- display: flex;
- background-color: var(--main-h1-color);
-}
-.footer-inbox {
- margin-left: 215px;
- margin-top: 60px;
- margin-bottom: 60px;
-}
-.footer-list {
- padding-left: 0px;
- margin: 0;
- margin-top: 9px;
-}
-.footer-list > *:first-child {
- padding-bottom: 9px;
-}
-.footer-inbox > *:first-child {
- display: flex;
- padding-bottom: 20px;
-}
+/*---------------------*/
+/* Koniex portfolio.html */
