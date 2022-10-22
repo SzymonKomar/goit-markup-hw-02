@@ -304,7 +304,6 @@ button:focus {
  line-height: 1, 85em;
  margin-top: 0px;
 }
-
 .products ul {
  display: flex;
  flex-wrap: wrap;
@@ -317,17 +316,14 @@ button:focus {
 .image {
  margin: 0px;
 }
-
 .image img {
  display: block;
 }
-
 .products-caption {
  border: solid 1px #eeeeee;
  padding-left: 20px;
  border-top: none;
 }
-
 .products {
  padding-top: 0px;
  vertical-align: bottom;
