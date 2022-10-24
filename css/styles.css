@@ -22,8 +22,9 @@ ul {
  list-style: none;
 }
 .container {
- width: 1600px;
- margin: auto;
+ width: 1200px;
+ margin: 0 auto;
+ padding: 0 15px;
 }
 section {
  padding-top: 94px;
@@ -57,22 +58,22 @@ button:focus {
 /*-------------------- */
 /*      Nagłówek      */
 .nav-bar {
+ border-bottom: solid 1px #eeeeee;
  display: flex;
  align-items: center;
- padding-left: 215px;
- padding-right: 215px;
- border-bottom: solid 1px #eeeeee;
+}
+.nav-bar .container {
+ display: inline-flex;
+ align-items: center;
+ justify-content: space-between;
 }
 .nav-list {
  font-weight: 500;
  line-height: 1, 14em;
  display: inline-flex;
- justify-content: space-evenly;
- padding-left: 0px;
- gap: 50px;
+ gap: 46px;
 }
 .contacts {
- flex-grow: 1;
  display: inline-flex;
  gap: 50px;
 }
@@ -82,19 +83,15 @@ button:focus {
  color: var(--text-color-g);
 }
 .name {
- flex-grow: 1;
-}
-.nav {
- display: inline-flex;
- flex-grow: 2;
- justify-content: center;
- margin-right: 200px;
-}
-.name {
  font-family: "Raleway", sans-serif;
  font-weight: 700;
  line-height: 1, 15em;
  color: var(--black-color);
+}
+.nav {
+ font-weight: 500;
+ line-height: 1, 14em;
+ padding-right: 240px;
 }
 .Web {
  color: var(--blue-color);
@@ -105,11 +102,15 @@ button:focus {
  display: flex;
  background-color: var(--main-h1-color);
 }
-.footer-inbox {
+.footer .container {
+ width: 1200px;
+ margin: 0 auto;
+ padding: 0 15px;
  margin-left: 215px;
  margin-top: 60px;
  margin-bottom: 60px;
 }
+
 .footer-list {
  padding-left: 0px;
  margin: 0;
@@ -129,28 +130,31 @@ button:focus {
 .address {
  line-height: 1, 71em;
  color: var(--white-color);
+ padding-top: 20px;
 }
 /*-----------------------*/
 /* Efektywne rozwiązania */
 .main-h1 {
  display: flex;
+ align-items: center;
+ justify-content: center;
  background-color: var(--main-h1-color);
  height: 600px;
+}
+.main-h1 .container {
+ display: flex;
+ flex-direction: column;
  justify-content: center;
  align-items: center;
- flex-direction: column;
 }
 .main-text {
  text-indent: -26px;
  margin: 0;
  margin-bottom: 30px;
-}
-.button1 {
- display: flex;
- height: 50px;
- width: 200px;
- align-items: center;
- justify-content: center;
+ font-weight: 900;
+ line-height: 1, 36em;
+ color: var(--white-color);
+ font-size: 44px;
 }
 .button1 {
  background-color: var(--blue-color);
@@ -160,30 +164,26 @@ button:focus {
  font-weight: 700;
  border: none;
  border-radius: 4px;
+ height: 50px;
+ width: 200px;
 }
-.main-text {
- display: block;
- font-weight: 900;
- line-height: 1, 36em;
- color: var(--white-color);
- font-size: 44px;
-}
+
 /*------------------*/
 /*      Zalety      */
 .advantages {
  display: flex;
- justify-content: center;
  align-items: center;
- margin: 0px;
- padding-left: 150px;
- padding-right: 150px;
+ justify-content: center;
+}
+.advantages .container {
+ display: flex;
+ justify-content: center;
+ width: 1300px;
 }
 .advantages-list {
  display: inline-flex;
- margin: 0px;
- padding: 0px;
- justify-content: center;
- align-items: center;
+ padding: 0;
+ margin: 0;
  gap: 30px;
 }
 .advantages-title {
@@ -198,29 +198,48 @@ button:focus {
 /* Czym się zajmujemy */
 .projects {
  display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.projects .container {
+ display: flex;
+ align-items: center;
  flex-direction: column;
- align-items: stretch;
- justify-content: flex-start;
+ justify-content: center;
 }
 .projects-h2 {
- display: flex;
- justify-content: center;
- margin-top: 0px;
- margin-bottom: 50px;
  font-weight: 700;
  line-height: 1, 17em;
 }
 .projects-images {
  display: inline-flex;
- justify-content: center;
- align-items: center;
  gap: 30px;
 }
 /*--------------------*/
 /*     Zespół        */
+.team {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.team .container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding-left: 40px;
+}
 .team-h2 {
  font-weight: 700;
  line-height: 1, 17em;
+}
+.team-images {
+ display: inline-flex;
+ align-self: center;
+ justify-content: center;
+ padding: 0px;
+ gap: 30px;
 }
 .team-header {
  font-weight: 500;
@@ -240,18 +259,7 @@ button:focus {
  display: inline-flex;
  justify-content: center;
 }
-.team {
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
-}
-.team-images {
- display: inline-flex;
- align-self: center;
- padding: 0px;
- gap: 30px;
-}
+
 .image-team {
  margin: 0px;
  border: solid 1px #eeeeee;
@@ -260,6 +268,25 @@ button:focus {
 /* Koniex index.html */
 /* Początek portfolio.html */
 /* Przyciski */
+.buttons {
+ display: flex;
+ justify-content: center;
+ justify-content: center;
+ padding: 0px;
+ margin-top: 94px;
+ margin-bottom: 34px;
+}
+.buttons .container {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.buttons .container ul {
+ display: flex;
+ gap: 8px;
+ justify-content: center;
+ align-items: center;
+}
 .button2 {
  background-color: var(--grey-b-color);
  color: var(--text-color);
@@ -272,27 +299,25 @@ button:focus {
  height: 38px;
  font-size: 16px;
 }
-.buttons {
- display: flex;
- justify-content: center;
- padding: 0px;
- margin-bottom: 56px;
-}
-.buttons .buttons-inbox {
- display: inline-flex;
- gap: 8px;
- margin-top: 94px;
- margin-bottom: 0px;
-}
-.button-inbox {
- background-color: var(--grey-b-color);
- color: var(--text-color);
- cursor: pointer;
- line-height: 1, 875em;
- font-weight: 700;
-}
 /*-------------*/
 /* Produkty */
+.products {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.products .container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.products .container ul {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 30px;
+ padding: 0;
+ flex-basis: calc((100% -60px) 3);
+}
 .caption-header {
  font-weight: 700;
  line-height: 2em;
@@ -305,13 +330,6 @@ button:focus {
  margin-top: 0px;
 }
 .products ul {
- display: flex;
- flex-wrap: wrap;
- padding-left: 30px;
- padding-right: 30px;
- padding-bottom: 30px;
- justify-content: center;
- gap: 30px;
 }
 .image {
  margin: 0px;
@@ -324,9 +342,6 @@ button:focus {
  padding-left: 20px;
  border-top: none;
 }
-.products {
- padding-top: 0px;
- vertical-align: bottom;
-}
+
 /*---------------------*/
 /* Koniex portfolio.html */
