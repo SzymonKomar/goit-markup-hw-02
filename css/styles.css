@@ -80,20 +80,30 @@ button:focus {
 .contacts {
  display: flex;
  justify-content: flex-end;
+ align-items: center;
  gap: 50px;
 }
-.mail-icon {
- display: flex;
- fill: #2f303a;
+.icon-box {
+ display: inline-flex;
  align-items: center;
- width: 16px;
- height: 12px;
- background-color: #000000;
+ justify-content: center;
+}
+.icon-box:hover {
+ fill: #2196f3;
+}
+.mail-icon {
+ width: 21px;
+ height: 16px;
+}
+.mail-icon:hover {
+ fill: #2196f3;
+ stroke: #2196f3;
 }
 .contacts-h {
  font-weight: 500;
  line-height: 1, 14em;
  color: var(--text-color-g);
+ font-size: 14px;
 }
 .name {
  font-family: "Raleway", sans-serif;
