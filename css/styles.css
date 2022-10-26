@@ -55,6 +55,9 @@ a:focus {
 button:focus {
  background-color: var(--blue-color);
 }
+.icon {
+ fill: #212121;
+}
 /*-------------------- */
 /*      Nagłówek      */
 .nav-bar {
@@ -78,6 +81,9 @@ button:focus {
  display: flex;
  justify-content: flex-end;
  gap: 50px;
+}
+.mail-icon {
+ fill: #2f303a;
 }
 .contacts-h {
  font-weight: 500;
@@ -138,7 +144,8 @@ button:focus {
  height: 600px;
 }
 .main-h1 {
- background-image: url();
+ background-image: url(/images/background.jpg),
+  linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 .container-main-h1 {
  display: flex;
