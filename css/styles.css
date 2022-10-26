@@ -115,9 +115,9 @@ button:focus {
 .footer-list > *:first-child {
  padding-bottom: 9px;
 }
-.footer-inbox > *:first-child {
+.container-footer > *:first-child {
  display: flex;
- padding-bottom: 20px;
+ padding-bottom: 9px;
 }
 .contacts-f {
  line-height: 1, 71em;
@@ -126,7 +126,7 @@ button:focus {
 .address {
  line-height: 1, 71em;
  color: var(--white-color);
- padding-top: 20px;
+ padding-top: 11px;
 }
 /*-----------------------*/
 /* Efektywne rozwiązania */
