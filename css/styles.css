@@ -83,7 +83,9 @@ button:focus {
  gap: 50px;
 }
 .mail-icon {
+ display: flex;
  fill: #2f303a;
+ align-items: center;
 }
 .contacts-h {
  font-weight: 500;
