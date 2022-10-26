@@ -138,7 +138,7 @@ button:focus {
  height: 600px;
 }
 .main-h1 {
- background-image: url(images\background.jpg);
+ background-image: url();
 }
 .container-main-h1 {
  display: flex;
