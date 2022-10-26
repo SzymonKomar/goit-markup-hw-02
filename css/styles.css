@@ -20,11 +20,11 @@
 /* Ustawienia globane */
 ul {
  list-style: none;
+ padding: 0px;
 }
 .container {
  width: 1200px;
  margin: 0 auto;
- padding: 0 15px;
 }
 section {
  padding-top: 94px;
@@ -62,10 +62,11 @@ button:focus {
  display: flex;
  align-items: center;
 }
-.nav-bar .container {
- display: inline-flex;
+.container-nav-bar {
+ display: flex;
  align-items: center;
  justify-content: space-between;
+ width: 1200px;
 }
 .nav-list {
  font-weight: 500;
@@ -74,7 +75,8 @@ button:focus {
  gap: 46px;
 }
 .contacts {
- display: inline-flex;
+ display: flex;
+ justify-content: flex-end;
  gap: 50px;
 }
 .contacts-h {
@@ -91,7 +93,6 @@ button:focus {
 .nav {
  font-weight: 500;
  line-height: 1, 14em;
- padding-right: 240px;
 }
 .Web {
  color: var(--blue-color);
@@ -102,15 +103,10 @@ button:focus {
  display: flex;
  background-color: var(--main-h1-color);
 }
-.footer .container {
- width: 1200px;
- margin: 0 auto;
- padding: 0 15px;
- margin-left: 215px;
+.container-footer {
  margin-top: 60px;
  margin-bottom: 60px;
 }
-
 .footer-list {
  padding-left: 0px;
  margin: 0;
@@ -141,7 +137,7 @@ button:focus {
  background-color: var(--main-h1-color);
  height: 600px;
 }
-.main-h1 .container {
+.container-main-h1 {
  display: flex;
  flex-direction: column;
  justify-content: center;
@@ -175,10 +171,9 @@ button:focus {
  align-items: center;
  justify-content: center;
 }
-.advantages .container {
+.container-adventages {
  display: flex;
  justify-content: center;
- width: 1300px;
 }
 .advantages-list {
  display: inline-flex;
@@ -193,6 +188,7 @@ button:focus {
 .advantages-text {
  line-height: 1, 5em;
  color: var(--text-color-g);
+ font-size: 14px;
 }
 /*------------------*/
 /* Czym się zajmujemy */
@@ -201,7 +197,7 @@ button:focus {
  justify-content: center;
  align-items: center;
 }
-.projects .container {
+.container-projects {
  display: flex;
  align-items: center;
  flex-direction: column;
@@ -223,7 +219,7 @@ button:focus {
  align-items: center;
  justify-content: center;
 }
-.team .container {
+.container-team {
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -233,6 +229,9 @@ button:focus {
 .team-h2 {
  font-weight: 700;
  line-height: 1, 17em;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 .team-images {
  display: inline-flex;
@@ -255,11 +254,6 @@ button:focus {
  justify-content: center;
  align-items: center;
 }
-.team-h2 {
- display: inline-flex;
- justify-content: center;
-}
-
 .image-team {
  margin: 0px;
  border: solid 1px #eeeeee;
@@ -276,12 +270,12 @@ button:focus {
  margin-top: 94px;
  margin-bottom: 34px;
 }
-.buttons .container {
+.container-buttons {
  display: flex;
  align-items: center;
  justify-content: center;
 }
-.buttons .container ul {
+.container-buttons ul {
  display: flex;
  gap: 8px;
  justify-content: center;
@@ -306,12 +300,12 @@ button:focus {
  justify-content: center;
  align-items: center;
 }
-.products .container {
+.container-products {
  display: flex;
  justify-content: center;
  align-items: center;
 }
-.products .container ul {
+.container-products ul {
  display: flex;
  flex-wrap: wrap;
  gap: 30px;
