@@ -13,7 +13,8 @@
  --grey-b-color: #f5f4fa;
  --white-color: #ffffff;
  --black-color: #000000;
- --main-h1-color: #2f303a;
+ --main-h1-color: #30313b;
+ --icon-grey-color: #afb1b8;
 }
 
 /*Początek index.html*/
@@ -43,6 +44,7 @@ button:hover {
 a:visited {
  color: var(--text-color);
 }
+
 a:hover {
  color: var(--blue-color);
 }
@@ -50,13 +52,10 @@ a:link {
  text-decoration: none;
 }
 a:focus {
- background-color: var(--blue-color);
+ color: var(--blue-color);
 }
 button:focus {
  background-color: var(--blue-color);
-}
-.icon {
- fill: #212121;
 }
 /*-------------------- */
 /*      Nagłówek      */
@@ -83,22 +82,51 @@ button:focus {
  align-items: center;
  gap: 50px;
 }
-.icon-box {
+
+.icon-box-mail {
  display: inline-flex;
  align-items: center;
  justify-content: center;
 }
-.icon-box:hover {
- fill: #2196f3;
+.icon-box-mail:hover svg {
+ --color5: var(--blue-color);
 }
+.icon-box-tel {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+}
+.icon-box-tel:hover svg {
+ --color5: var(--blue-color);
+}
+.icon-box-mail .focus-h:focus svg {
+ --color5: var(--blue-color);
+}
+
 .mail-icon {
- width: 21px;
+ width: 31px;
  height: 16px;
+ cursor: pointer;
+ --color5: var(--text-color-g);
+ padding-right: 10px;
 }
-.mail-icon:hover {
- fill: #2196f3;
- stroke: #2196f3;
+
+.focus-h .mail-icon {
+ width: 31px;
+ height: 16px;
+ display: flex;
 }
+
+.tel-icon {
+ width: 26px;
+ height: 30px;
+ display: flex;
+ align-items: center;
+ justify-items: center;
+ fill: var(--text-color-g);
+ padding-right: 10px;
+}
+
 .contacts-h {
  font-weight: 500;
  line-height: 1, 14em;
@@ -110,6 +138,7 @@ button:focus {
  font-weight: 700;
  line-height: 1, 15em;
  color: var(--black-color);
+ font-size: 26px;
 }
 .nav {
  font-weight: 500;
@@ -127,11 +156,20 @@ button:focus {
 .container-footer {
  margin-top: 60px;
  margin-bottom: 60px;
+ display: flex;
 }
-.footer-list {
- padding-left: 0px;
- margin: 0;
- margin-top: 9px;
+.footer-block {
+ display: flex;
+ flex-direction: column;
+}
+.social-icons-container {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ padding-left: 70px;
+}
+.social-icons-h3 {
+ color: var(--background-color);
 }
 .footer-list > *:first-child {
  padding-bottom: 9px;
@@ -147,8 +185,23 @@ button:focus {
 .address {
  line-height: 1, 71em;
  color: var(--white-color);
- padding-top: 11px;
+ padding-top: 20px;
 }
+.social-icons svg {
+ cursor: pointer;
+ --color1: rgb(255, 255, 255, 0.1);
+ --color2: var(--white-color);
+}
+.social-icons svg:hover {
+ --color1: var(--blue-color);
+ --color2: var(--white-color);
+ cursor: pointer;
+}
+.instagram-icon:focus {
+ --color1: var(--blue-color);
+ --color2: var(--white-color);
+}
+
 /*-----------------------*/
 /* Efektywne rozwiązania */
 .main-h1 {
@@ -161,6 +214,8 @@ button:focus {
 .main-h1 {
  background-image: url(/images/background.jpg),
   linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 .container-main-h1 {
  display: flex;
@@ -206,6 +261,11 @@ button:focus {
  margin: 0;
  gap: 30px;
 }
+.advantages-list svg {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+}
 .advantages-title {
  font-weight: 700;
  line-height: 1, 17em;
@@ -214,6 +274,12 @@ button:focus {
  line-height: 1, 5em;
  color: var(--text-color-g);
  font-size: 14px;
+}
+.advantages-icons {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: #f5f4fa;
 }
 /*------------------*/
 /* Czym się zajmujemy */
@@ -243,6 +309,7 @@ button:focus {
  flex-direction: column;
  align-items: center;
  justify-content: center;
+ background-color: #f5f4fa;
 }
 .container-team {
  display: flex;
@@ -281,9 +348,61 @@ button:focus {
 }
 .image-team {
  margin: 0px;
- border: solid 1px #eeeeee;
+ display: inline-flex;
+ flex-direction: column;
+}
+.team-caption {
+ box-shadow: 0px 2px 5px var(--icon-grey-color);
+}
+.social-icons-team {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
+ fill: #ffffff;
+ padding-bottom: 30px;
+}
+.social-icons-team svg {
+ --color3: var(--icon-grey-color);
+ --color2: #f5f4fa;
+}
+.social-icons-team svg:hover {
+ --color3: var(--white-color);
+ --color2: var(--blue-color);
+}
+.social-icons-team a:focus svg {
+ --color3: var(--white-color);
+ --color2: var(--blue-color);
 }
 /*-------------------*/
+/*Nasi klienci*/
+.clients {
+ display: flex;
+ flex-direction: column;
+}
+.clients-h2 {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.clients-box {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+}
+.clients-list {
+ display: inline-flex;
+ align-content: center;
+ justify-content: center;
+ gap: 30px;
+}
+.clients-list li {
+ border: solid 1px #afb1b8;
+}
+.clients-list svg:hover {
+ --color3: var(--blue-color);
+ cursor: pointer;
+}
 /* Koniex index.html */
 /* Początek portfolio.html */
 /* Przyciski */
@@ -354,11 +473,13 @@ button:focus {
 .image img {
  display: block;
 }
+.image:hover {
+ box-shadow: 0px 2px 5px var(--icon-grey-color);
+}
 .products-caption {
  border: solid 1px #eeeeee;
  padding-left: 20px;
  border-top: none;
 }
-
 /*---------------------*/
 /* Koniex portfolio.html */
