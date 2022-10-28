@@ -15,6 +15,7 @@
  --black-color: #000000;
  --main-h1-color: #30313b;
  --icon-grey-color: #afb1b8;
+ --social-footer-bcg-color: rgb(255, 255, 255, 0.1);
 }
 
 /*Początek index.html*/
@@ -176,6 +177,10 @@ button:focus {
 }
 .footer-list > *:first-child {
  padding-bottom: 9px;
+ padding-top: 9px;
+}
+.footer-list {
+ margin: 0px;
 }
 .container-footer > *:first-child {
  display: flex;
@@ -192,7 +197,7 @@ button:focus {
 }
 .social-icons svg {
  cursor: pointer;
- --color1: rgb(255, 255, 255, 0.1);
+ --color1: var(--social-footer-bcg-color);
  --color2: var(--white-color);
 }
 .social-icons svg:hover {
@@ -200,12 +205,13 @@ button:focus {
  --color2: var(--white-color);
  cursor: pointer;
 }
-.social-icons svg {
- padding-left: 10px;
-}
+
 .social-icons .focus-f:focus-within svg {
  --color1: var(--blue-color);
  --color2: var(--white-color);
+}
+.focus-f {
+ display: inline-flex;
 }
 /*-----------------------*/
 /* Efektywne rozwiązania */
@@ -285,6 +291,8 @@ button:focus {
  align-items: center;
  justify-content: center;
  background-color: #f5f4fa;
+ width: 270px;
+ height: 120px;
 }
 /*------------------*/
 /* Czym się zajmujemy */
