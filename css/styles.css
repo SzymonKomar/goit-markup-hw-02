@@ -143,6 +143,7 @@ button:focus {
  line-height: 1, 15em;
  color: var(--black-color);
  font-size: 26px;
+ cursor: pointer;
 }
 .nav {
  font-weight: 500;
@@ -197,7 +198,6 @@ button:focus {
  padding-top: 20px;
 }
 .social-icons svg {
- cursor: pointer;
  --color1: var(--social-footer-bcg-color);
  --color2: var(--white-color);
 }
@@ -206,7 +206,6 @@ button:focus {
  --color2: var(--white-color);
  cursor: pointer;
 }
-
 .social-icons .focus-f:focus-within svg {
  --color1: var(--blue-color);
  --color2: var(--white-color);
