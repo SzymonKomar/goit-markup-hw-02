@@ -199,10 +199,6 @@ button:focus {
  --color2: var(--white-color);
  cursor: pointer;
 }
-.instagram-icon:focus {
- --color1: var(--blue-color);
- --color2: var(--white-color);
-}
 
 /*-----------------------*/
 /* Efektywne rozwiązania */
@@ -404,6 +400,9 @@ button:focus {
 .clients-list svg:hover {
  --color3: var(--blue-color);
  cursor: pointer;
+}
+.clients-list .focus-c:focus svg {
+ --color3: var(--blue-color);
 }
 /* Koniex index.html */
 /* Początek portfolio.html */
