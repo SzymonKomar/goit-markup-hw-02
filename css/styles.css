@@ -76,6 +76,7 @@ button:focus {
  line-height: 1, 14em;
  display: inline-flex;
  gap: 46px;
+ color: var(--text-color);
 }
 .contacts {
  display: flex;
