@@ -102,7 +102,9 @@ button:focus {
 .icon-box-mail .focus-h:focus svg {
  --color5: var(--blue-color);
 }
-
+.icon-box-tel .focus-h:focus svg {
+ --color5: var(--blue-color);
+}
 .mail-icon {
  width: 31px;
  height: 16px;
