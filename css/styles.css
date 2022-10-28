@@ -58,6 +58,7 @@ a:focus {
 button:focus {
  background-color: var(--blue-color);
 }
+
 /*-------------------- */
 /*      Nagłówek      */
 .nav-bar {
@@ -201,11 +202,11 @@ button:focus {
  --color1: var(--social-footer-bcg-color);
  --color2: var(--white-color);
 }
-.social-icons svg:hover {
+.social-icons .focus-f:hover svg {
  --color1: var(--blue-color);
  --color2: var(--white-color);
- cursor: pointer;
 }
+
 .social-icons .focus-f:focus-within svg {
  --color1: var(--blue-color);
  --color2: var(--white-color);
