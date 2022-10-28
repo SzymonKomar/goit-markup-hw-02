@@ -172,6 +172,7 @@ button:focus {
 }
 .social-icons-h3 {
  color: var(--background-color);
+ padding-left: 10px;
 }
 .footer-list > *:first-child {
  padding-bottom: 9px;
@@ -199,7 +200,13 @@ button:focus {
  --color2: var(--white-color);
  cursor: pointer;
 }
-
+.social-icons svg {
+ padding-left: 10px;
+}
+.social-icons .focus-f:focus-within svg {
+ --color1: var(--blue-color);
+ --color2: var(--white-color);
+}
 /*-----------------------*/
 /* Efektywne rozwiązania */
 .main-h1 {
