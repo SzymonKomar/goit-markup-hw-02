@@ -266,6 +266,7 @@ button:focus {
 .container-adventages {
  display: flex;
  justify-content: center;
+ width: 1170px;
 }
 .advantages-list {
  display: inline-flex;
@@ -307,6 +308,7 @@ button:focus {
  align-items: center;
  flex-direction: column;
  justify-content: center;
+ width: 1170px;
 }
 .projects-h2 {
  font-weight: 700;
@@ -367,6 +369,7 @@ button:focus {
 }
 .team-caption {
  box-shadow: 0px 2px 5px var(--icon-grey-color);
+ background-color: #ffffff;
 }
 .social-icons-team {
  display: flex;
@@ -378,7 +381,7 @@ button:focus {
 }
 .social-icons-team svg {
  --color3: var(--icon-grey-color);
- --color2: #f5f4fa;
+ --color2: #ffffff;
 }
 .social-icons-team svg:hover {
  --color3: var(--white-color);
@@ -393,6 +396,9 @@ button:focus {
 .clients {
  display: flex;
  flex-direction: column;
+}
+.container-clients {
+ width: 1170px;
 }
 .clients-h2 {
  display: flex;
