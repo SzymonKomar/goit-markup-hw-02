@@ -38,7 +38,8 @@ section {
  color: var(--text-color);
 }
 button:hover {
- transition-delay: 0ms;
+ transition-duration: 250ms;
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
  background-color: var(--blue-color);
  color: var(--white-color);
 }
@@ -47,10 +48,13 @@ a:visited {
 }
 
 a:hover {
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
  color: var(--blue-color);
 }
 a:link {
  text-decoration: none;
+ color: var(--text-color);
 }
 a:focus {
  color: var(--blue-color);
@@ -71,42 +75,43 @@ button:focus {
  align-items: center;
  justify-content: space-between;
  width: 1200px;
+ padding-left: 100px;
+ padding-right: 100px;
 }
+
 .nav-list {
  font-weight: 500;
  line-height: 1, 14em;
  display: inline-flex;
  gap: 46px;
  color: var(--text-color);
+ font-size: 14px;
 }
 .contacts {
  display: flex;
  justify-content: flex-end;
  align-items: center;
  gap: 50px;
+ font-size: 14px;
 }
-
+.contacts .contacts-h {
+ color: var(--text-color-g);
+}
 .icon-box-mail {
  display: inline-flex;
  align-items: center;
  justify-content: center;
 }
-.icon-box-mail:hover svg {
+.icon-box-mail-over .icon-box-mail:hover .contacts-h {
+ color: var(--blue-color);
+}
+.icon-box-mail-over .icon-box-mail:hover .mail-icon {
  --color5: var(--blue-color);
 }
-.icon-box-tel {
- display: inline-flex;
- align-items: center;
- justify-content: center;
-}
-.icon-box-tel:hover svg {
+.icon-box-mail-over .icon-box-mail:hover :nth-child(1) {
  --color5: var(--blue-color);
-}
-.icon-box-mail .focus-h:focus svg {
- --color5: var(--blue-color);
-}
-.icon-box-tel .focus-h:focus svg {
- --color5: var(--blue-color);
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
 }
 .mail-icon {
  width: 31px;
@@ -115,13 +120,16 @@ button:focus {
  --color5: var(--text-color-g);
  padding-right: 10px;
 }
-
 .focus-h .mail-icon {
  width: 31px;
  height: 16px;
  display: flex;
 }
-
+.icon-box-tel {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+}
 .tel-icon {
  width: 26px;
  height: 30px;
@@ -163,6 +171,7 @@ button:focus {
  margin-top: 60px;
  margin-bottom: 60px;
  display: flex;
+ padding-left: 100px;
 }
 .footer-block {
  display: flex;
@@ -185,13 +194,16 @@ button:focus {
 .footer-list {
  margin: 0px;
 }
+.footer-list .contacts-f {
+ color: var(--text-color-g);
+ line-height: 1, 71em;
+}
+.footer-list .contacts-f:hover {
+ color: var(--blue-color);
+}
 .container-footer > *:first-child {
  display: flex;
  padding-bottom: 9px;
-}
-.contacts-f {
- line-height: 1, 71em;
- color: var(--text-color-g);
 }
 .address {
  line-height: 1, 71em;
