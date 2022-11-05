@@ -14,8 +14,9 @@
  --white-color: #ffffff;
  --black-color: #000000;
  --main-h1-color: #30313b;
- --icon-grey-color: #afb1b8;
+ --team-box-color: #afb1b8;
  --social-footer-bcg-color: rgb(255, 255, 255, 0.1);
+ --icons-grey-color: #afb1b8;
 }
 
 /*Początek index.html*/
@@ -38,8 +39,6 @@ section {
  color: var(--text-color);
 }
 button:hover {
- transition-duration: 250ms;
- transition: cubic-bezier(0.4, 0, 0.2, 1);
  background-color: var(--blue-color);
  color: var(--white-color);
 }
@@ -61,6 +60,8 @@ a:focus {
 }
 button:focus {
  background-color: var(--blue-color);
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
 }
 
 /*-------------------- */
@@ -102,27 +103,25 @@ button:focus {
  align-items: center;
  justify-content: center;
 }
-.icon-box-mail-over .icon-box-mail:hover .contacts-h {
+.icon-box-mail-over:hover :nth-child(1) {
+ fill: var(--blue-color);
  color: var(--blue-color);
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
 }
-.icon-box-mail-over .icon-box-mail:hover .mail-icon {
- --color5: var(--blue-color);
-}
-.icon-box-mail-over .icon-box-mail:hover :nth-child(1) {
- --color5: var(--blue-color);
+.icon-box-mail-over .focus-h:focus svg {
+ fill: var(--blue-color);
  transition: cubic-bezier(0.4, 0, 0.2, 1);
  transition-duration: 250ms;
 }
 .mail-icon {
- width: 31px;
- height: 16px;
+ width: 26px;
+ height: 12px;
  cursor: pointer;
- --color5: var(--text-color-g);
+ fill: var(--text-color-g);
  padding-right: 10px;
 }
 .focus-h .mail-icon {
- width: 31px;
- height: 16px;
  display: flex;
 }
 .icon-box-tel {
@@ -130,21 +129,45 @@ button:focus {
  align-items: center;
  justify-content: center;
 }
+.icon-box-tel-over {
+ display: flex;
+}
+.icon-box-tel-over:hover :nth-child(1) {
+ fill: var(--blue-color);
+ color: var(--blue-color);
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
+}
+.icon-box-tel-over:focus :nth-child(1) {
+ fill: var(--blue-color);
+ color: var(--blue-color);
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
+}
+.icon-box-tel-over .focus-h:focus svg {
+ fill: var(--blue-color);
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
+}
 .tel-icon {
- width: 26px;
- height: 30px;
+ width: 20px;
+ height: 16px;
  display: flex;
  align-items: center;
  justify-items: center;
  fill: var(--text-color-g);
  padding-right: 10px;
 }
-
 .contacts-h {
  font-weight: 500;
  line-height: 1, 14em;
  color: var(--text-color-g);
  font-size: 14px;
+}
+.contacts-h:focus {
+ color: var(--blue-color);
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
 }
 .name {
  font-family: "Raleway", sans-serif;
@@ -181,11 +204,11 @@ button:focus {
  display: flex;
  flex-direction: column;
  align-items: flex-start;
+ justify-content: flex-start;
  padding-left: 70px;
 }
 .social-icons-h3 {
  color: var(--background-color);
- padding-left: 10px;
 }
 .footer-list > *:first-child {
  padding-bottom: 9px;
@@ -197,6 +220,11 @@ button:focus {
 .footer-list .contacts-f {
  color: var(--text-color-g);
  line-height: 1, 71em;
+}
+.contacts-f:focus {
+ color: var(--blue-color);
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
 }
 .footer-list .contacts-f:hover {
  color: var(--blue-color);
@@ -210,22 +238,29 @@ button:focus {
  color: var(--white-color);
  padding-top: 20px;
 }
-.social-icons svg {
- --color1: var(--social-footer-bcg-color);
- --color2: var(--white-color);
-}
-.social-icons .focus-f:hover svg {
- --color1: var(--blue-color);
- --color2: var(--white-color);
-}
-
-.social-icons .focus-f:focus-within svg {
- --color1: var(--blue-color);
- --color2: var(--white-color);
-}
 .focus-f {
  display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ width: 44px;
+ height: 44px;
+ border-radius: 50%;
+ background-color: var(--social-footer-bcg-color);
 }
+.focus-f:hover {
+ background-color: var(--blue-color);
+}
+.focus-f:focus {
+ background-color: var(--blue-color);
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
+}
+.icon-f {
+ width: 20px;
+ height: 20px;
+ fill: var(--white-color);
+}
+
 /*-----------------------*/
 /* Efektywne rozwiązania */
 .main-h1 {
@@ -304,7 +339,6 @@ button:focus {
  display: flex;
  align-items: center;
  justify-content: center;
- background-color: #f5f4fa;
  width: 270px;
  height: 120px;
 }
@@ -380,7 +414,7 @@ button:focus {
  flex-direction: column;
 }
 .team-caption {
- box-shadow: 0px 2px 5px var(--icon-grey-color);
+ box-shadow: 0px 2px 5px var(--team-box-color);
  background-color: #ffffff;
 }
 .social-icons-team {
@@ -391,17 +425,33 @@ button:focus {
  fill: #ffffff;
  padding-bottom: 30px;
 }
-.social-icons-team svg {
- --color3: var(--icon-grey-color);
- --color2: #ffffff;
+
+.focus-t {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ width: 44px;
+ height: 44px;
+ border-radius: 50%;
 }
-.social-icons-team svg:hover {
- --color3: var(--white-color);
- --color2: var(--blue-color);
+.icon-team {
+ fill: var(--icons-grey-color);
 }
-.social-icons-team a:focus svg {
- --color3: var(--white-color);
- --color2: var(--blue-color);
+.focus-t:hover {
+ background-color: var(--blue-color);
+}
+.focus-t:focus {
+ background-color: var(--blue-color);
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
+}
+.focus-t:hover .icon-team {
+ fill: var(--white-color);
+}
+.focus-t:focus .icon-team {
+ fill: var(--white-color);
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
 }
 /*-------------------*/
 /*Nasi klienci*/
@@ -428,15 +478,28 @@ button:focus {
  justify-content: center;
  gap: 30px;
 }
-.clients-list li {
+.clients-list .focus-c {
  border: solid 1px #afb1b8;
 }
-.clients-list svg:hover {
- --color3: var(--blue-color);
- cursor: pointer;
+.focus-c {
+ width: 170px;
+ height: 92px;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ fill: var(--icons-grey-color);
 }
-.clients-list .focus-c:focus svg {
- --color3: var(--blue-color);
+.focus-c:hover {
+ fill: var(--blue-color);
+}
+.focus-c:focus {
+ fill: var(--blue-color);
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
+}
+.icon-c {
+ width: 106px;
+ height: 60px;
 }
 /* Koniex index.html */
 /* Początek portfolio.html */
@@ -471,6 +534,18 @@ button:focus {
  width: 121px;
  height: 38px;
  font-size: 16px;
+}
+.button2:hover {
+ color: var(--white-color);
+ background-color: var(--blue-color);
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
+}
+.button2:focus {
+ color: var(--white-color);
+ background-color: var(--blue-color);
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
 }
 /*-------------*/
 /* Produkty */
