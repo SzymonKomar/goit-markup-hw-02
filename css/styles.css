@@ -70,6 +70,7 @@ button:focus {
  border-bottom: solid 1px #eeeeee;
  display: flex;
  align-items: center;
+ padding: 0;
 }
 .container-nav-bar {
  display: flex;
@@ -87,7 +88,18 @@ button:focus {
  gap: 46px;
  color: var(--text-color);
  font-size: 14px;
+ margin-bottom: 0;
 }
+.nav-list .underline {
+ display: flex;
+ position: relative;
+ top: 2px;
+}
+.underline {
+ fill: var(--blue-color);
+ margin-top: 10px;
+}
+
 .contacts {
  display: flex;
  justify-content: flex-end;
