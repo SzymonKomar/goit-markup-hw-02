@@ -76,7 +76,9 @@
        EFEKTYWNE ROZWIĄZANIA <br />
        DLA WASZEGO BIZNESU
       </h1>
-      <button class="button1" type="submit">Zamów usługę</button>
+      <button class="button1" type="submit" data-modal-open>
+       Zamów usługę
+      </button>
      </div>
     </div>
    </section>
@@ -423,5 +425,11 @@
     </div>
    </div>
   </footer>
+  <div class="backdrop" data-modal>
+   <div class="modal">
+    <button class="close-btn" type="button" data-modal-close>X</button>
+   </div>
+  </div>
+  <script src="./modal.js"></script>
  </body>
 </html>

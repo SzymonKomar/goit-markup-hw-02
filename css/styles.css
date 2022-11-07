@@ -63,6 +63,28 @@ button:focus {
  transition: cubic-bezier(0.4, 0, 0.2, 1);
  transition-duration: 250ms;
 }
+/*-----------------------*/
+/*       Backdrop        */
+.is-hidden {
+ opacity: 0;
+ visibility: hidden;
+ pointer-events: none;
+}
+.backdrop {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: #00000020;
+ min-width: 100%;
+ min-height: 100%;
+}
+.modal {
+ background-color: #ffffff;
+ width: 300px;
+ height: 200px;
+}
 
 /*-------------------- */
 /*      Nagłówek      */
