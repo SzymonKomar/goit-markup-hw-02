@@ -594,7 +594,7 @@ button:focus {
  margin: 0px;
 }
 .image:hover .overlay {
- transform: translateX(0);
+ transform: translateY(0);
 }
 .image img {
  display: block;
@@ -614,7 +614,7 @@ button:focus {
  position: absolute;
  width: 100%;
  height: 100%;
- transform: translateX(-100%);
+ transform: translateY(+100%);
  transition: transform 250ms ease;
  background-color: #2195f3da;
 }
