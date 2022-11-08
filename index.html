@@ -25,8 +25,13 @@
      <a class="name"><span class="Web">Web</span>Studio</a>
      <nav class="nav">
       <ul class="nav-list">
-       <li class="current-site-index">
-        <a class="link" href="index.html">Agencja </a>
+       <li class="link-box">
+        <a class="link" href="index.html"
+         >Agencja
+         <svg class="underline" width="53px" height="4px">
+          <rect class="underline-rect" width="53px" height="4px"></rect>
+         </svg>
+        </a>
        </li>
        <li><a href="portfolio.html">Portfolio</a></li>
        <li><a href="">Kontakty</a></li>
@@ -71,7 +76,7 @@
        EFEKTYWNE ROZWIĄZANIA <br />
        DLA WASZEGO BIZNESU
       </h1>
-      <button class="button1" type="button" data-modal-open>
+      <button class="button1" type="submit" data-modal-open>
        Zamów usługę
       </button>
      </div>
@@ -115,7 +120,7 @@
         <h3 class="advantages-title">LOREM IPSUM</h3>
         <p class="advantages-text">
          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu
-         sem. Sed non sodales dui. Interdum et malesuada
+         sem. Sed non sodales dui. Interdum et malesu
         </p>
        </li>
        <li>
@@ -422,11 +427,7 @@
   </footer>
   <div class="backdrop is-hidden" data-modal>
    <div class="modal">
-    <button class="close-btn" type="button" data-modal-close>
-     <svg width="11px" height="11px" class="icon-x">
-      <use href="./images/icons.svg#icon-x-button"></use>
-     </svg>
-    </button>
+    <button class="close-btn" type="button" data-modal-close>X</button>
    </div>
   </div>
   <script src="./modal.js"></script>

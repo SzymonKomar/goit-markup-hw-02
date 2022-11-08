@@ -69,6 +69,7 @@ button:focus {
  opacity: 0;
  visibility: hidden;
  pointer-events: none;
+ transform: scale(0);
 }
 .modal {
  display: flex;
@@ -77,11 +78,18 @@ button:focus {
  width: 528px;
  height: 581px;
  border-radius: 5px;
+ transform: scale(1);
+ transition: ease 5ms;
+ transition-duration: 250ms;
 }
 .whole-site {
  position: relative;
  margin: 0;
 }
+.button1:active .modal {
+ background-color: brown;
+}
+
 .whole-site .backdrop {
  position: fixed;
  display: flex;
@@ -113,7 +121,6 @@ button:focus {
  transition: cubic-bezier(0.4, 0, 0.2, 1);
  transition-duration: 250ms;
 }
-
 /*-------------------- */
 /*      Nagłówek      */
 .nav-bar {
