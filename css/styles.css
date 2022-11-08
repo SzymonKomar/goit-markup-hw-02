@@ -70,20 +70,48 @@ button:focus {
  visibility: hidden;
  pointer-events: none;
 }
-.backdrop {
+.modal {
+ display: flex;
+ justify-content: right;
+ background-color: #ffffff;
+ width: 528px;
+ height: 581px;
+ border-radius: 5px;
+}
+.whole-site {
+ position: relative;
+ margin: 0;
+}
+.whole-site .backdrop {
  position: fixed;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.backdrop {
+ position: absolute;
  top: 0;
+ bottom: 0;
  left: 0;
  right: 0;
- bottom: 0;
- background-color: #00000020;
- min-width: 100%;
- min-height: 100%;
+ background-color: rgb(0, 0, 0, 0.2);
 }
-.modal {
+.modal .close-btn {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 30px;
+ height: 30px;
  background-color: #ffffff;
- width: 300px;
- height: 200px;
+ border: 2px solid rgb(0, 0, 0, 0.1);
+ border-radius: 15px;
+}
+.close-btn:hover {
+ fill: var(--white-color);
+ background-color: var(--blue-color);
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
 }
 
 /*-------------------- */
@@ -104,6 +132,7 @@ button:focus {
 }
 
 .nav-list {
+ position: relative;
  font-weight: 500;
  line-height: 1, 14em;
  display: inline-flex;
@@ -111,11 +140,31 @@ button:focus {
  color: var(--text-color);
  font-size: 14px;
  margin-bottom: 0;
+ margin-top: 0;
 }
 .nav-list .underline {
  display: flex;
- position: relative;
  top: 2px;
+}
+.current-site-index::after {
+ content: "";
+ position: absolute;
+ left: 0;
+ top: 28px;
+ width: 53px;
+ height: 4px;
+ border-radius: 5px;
+ background-color: var(--blue-color);
+}
+.current-site-portfolio::after {
+ content: "";
+ position: absolute;
+ left: 96px;
+ top: 28px;
+ width: 58px;
+ height: 4px;
+ border-radius: 5px;
+ background-color: var(--blue-color);
 }
 .underline {
  fill: var(--blue-color);
