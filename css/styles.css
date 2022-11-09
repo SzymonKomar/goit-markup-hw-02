@@ -70,6 +70,8 @@ button:focus {
  visibility: hidden;
  pointer-events: none;
  transform: scale(0);
+ transition: ease 5ms;
+ transition-duration: 250ms;
 }
 .modal {
  display: flex;
@@ -95,6 +97,9 @@ button:focus {
  display: flex;
  align-items: center;
  justify-content: center;
+ transform: scale(1);
+ transition: ease 5ms;
+ transition-duration: 250ms;
 }
 
 .backdrop {
@@ -114,6 +119,7 @@ button:focus {
  background-color: #ffffff;
  border: 2px solid rgb(0, 0, 0, 0.1);
  border-radius: 15px;
+ fill: #000000;
 }
 .close-btn:hover {
  fill: var(--white-color);
@@ -149,35 +155,28 @@ button:focus {
  margin-bottom: 0;
  margin-top: 0;
 }
-.nav-list .underline {
- display: flex;
- top: 2px;
-}
 .current-site-index::after {
  content: "";
  position: absolute;
- left: 0;
+ display: flex;
  top: 28px;
  width: 53px;
  height: 4px;
  border-radius: 5px;
  background-color: var(--blue-color);
+ fill: var(--blue-color);
 }
 .current-site-portfolio::after {
  content: "";
  position: absolute;
- left: 96px;
+ display: flex;
  top: 28px;
  width: 58px;
  height: 4px;
  border-radius: 5px;
  background-color: var(--blue-color);
-}
-.underline {
  fill: var(--blue-color);
- margin-top: 10px;
 }
-
 .contacts {
  display: flex;
  justify-content: flex-end;
