@@ -349,6 +349,10 @@ button:focus {
  height: 20px;
  fill: var(--white-color);
 }
+.email-form {
+ display: flex;
+ align-items: center;
+}
 
 /*-----------------------*/
 /* Efektywne rozwiązania */
