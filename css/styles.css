@@ -65,6 +65,43 @@ button:focus {
 }
 /*-----------------------*/
 /*       Backdrop        */
+.whole-site {
+ margin: 0;
+}
+.is-hidden {
+ scale: 0;
+ visibility: hidden;
+ pointer-events: none;
+ transform: scale(0);
+ transition-duration: 250ms;
+ transition: ease-out;
+}
+.backdrop {
+ top: 0;
+ bottom: 0;
+ position: fixed;
+ background-color: rgb(0, 0, 0, 0.2);
+ width: 100%;
+ height: 100%;
+}
+.modal {
+ position: fixed;
+ display: flex;
+ justify-content: right;
+ border-radius: 5px;
+ left: 35%;
+ right: 65%;
+ bottom: 0;
+ top: 190px;
+ width: 528px;
+ height: 581px;
+ background-color: #ffffff;
+}
+.modal {
+ transform: scale(1);
+ transition: ease-out;
+ transition-duration: 250ms;
+}
 .close-btn {
  display: flex;
  align-items: center;
