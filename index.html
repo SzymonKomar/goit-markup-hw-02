@@ -421,7 +421,7 @@
       <form name="newsletter" autocomplete="on" novalidate>
        <label for="email"
         ><p class="form-f">ZAPISZ SIĘ DO NEWSLETTERA</p>
-        <input type="email" name="email" placeholder="E-mail" />
+        <input type="email" name="email-newsletter" placeholder="E-mail" />
        </label>
        <div class="container-button-f">
         <button class="button-f" type="submit">
@@ -437,6 +437,14 @@
   </footer>
   <div class="backdrop is-hidden" data-modal>
    <div class="modal">
+    <form name="service-form" autocomplete="on" novalidate>
+     <h3 class="modal-header">Zostaw swoje dane w formularzu poniżej</h3>
+     <label> Imie <input type="name" name="name" /></label>
+     <label> Telefon <input type="name" name="phone" /></label>
+     <label> Email <input type="email" name="email-service" /></label>
+     <label> Komentarz<textarea name="comentary"></textarea></label>
+     <label> <input type="checkbox" name="terms-of-use" checked /></label>
+    </form>
     <div class="modal-button">
      <button class="close-btn" type="button" data-modal-close>
       <svg><use href="./images/icons.svg#icon-x-button"></use></svg>

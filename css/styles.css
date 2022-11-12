@@ -93,12 +93,15 @@ button:focus {
  background-color: white;
  width: 528px;
  display: flex;
- justify-content: right;
  height: 581px;
  border-radius: 5px;
  visibility: inherit;
  opacity: inherit;
  transition: ease-out 450ms;
+}
+.modal-button {
+ width: 30px;
+ height: 30px;
 }
 .close-btn {
  display: flex;
