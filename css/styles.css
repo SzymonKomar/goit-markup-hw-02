@@ -88,16 +88,13 @@ button:focus {
  transition-duration: 400ms;
 }
 .modal {
- position: absolute;
+ position: relative;
  background-color: white;
  width: 528px;
  display: flex;
  justify-content: right;
  height: 581px;
- left: 35%;
- right: 65%;
  border-radius: 5px;
- bottom: 190px;
  visibility: inherit;
  opacity: inherit;
  transition: ease-out 450ms;
@@ -279,6 +276,17 @@ button:focus {
  display: flex;
  background-color: var(--main-h1-color);
 }
+.footer form {
+}
+.footer label {
+}
+.footer input {
+ border-radius: 5px;
+ background-color: #00000000;
+ padding: 0px;
+ border: 1px;
+ border-color: #757575;
+}
 .container-footer {
  margin-top: 60px;
  margin-bottom: 60px;
@@ -352,8 +360,11 @@ button:focus {
 .email-form {
  display: flex;
  align-items: center;
+ flex-direction: row;
 }
-
+.form {
+ background-color: #000000;
+}
 /*-----------------------*/
 /* Efektywne rozwiązania */
 .main-h1 {
