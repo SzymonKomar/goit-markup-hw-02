@@ -93,6 +93,7 @@ button:focus {
  background-color: white;
  width: 528px;
  display: flex;
+ flex-direction: column;
  height: 581px;
  border-radius: 5px;
  visibility: inherit;
@@ -102,7 +103,10 @@ button:focus {
 .modal-button {
  width: 30px;
  height: 30px;
+ position: absolute;
+ right: 0%;
 }
+
 .close-btn {
  display: flex;
  align-items: center;
@@ -114,6 +118,73 @@ button:focus {
 .close-btn:hover {
  fill: var(--white-color);
 }
+.modal-label label {
+ padding-left: 40px;
+ padding-right: 40px;
+ display: flex;
+ flex-direction: column;
+ color: #757575;
+}
+
+.modal-label input {
+ height: 40px;
+ color: #757575;
+ border: 1px rgb(33, 33, 33, 0.2) solid;
+ border-radius: 5px;
+ margin-bottom: 10px;
+}
+.modal-label textarea {
+ resize: none;
+ color: #757575;
+ display: flex;
+ padding: 12px 16px;
+ border: 1px rgb(33, 33, 33, 0.2) solid;
+ border-radius: 5px;
+}
+.modal-header {
+ display: flex;
+ justify-content: center;
+ font-size: 20px;
+}
+.checkbox-box {
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+.checkbox-box input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+ height: 0;
+ width: 0;
+}
+.checkbox-accept {
+ position: absolute;
+ right: 0;
+
+ left: 35px;
+ fill: #ffffff;
+ border: 2px solid var(--black-color);
+ width: 18px;
+ height: 17px;
+}
+.checkbox-box input:checked ~ .checkbox-accept {
+ background-color: var(--blue-color);
+ width: 16px;
+ height: 16px;
+ border-radius: 4px;
+ border: 3px solid var(--blue-color);
+}
+.checkbox-accept svg {
+ width: 16px;
+ height: 15px;
+ border-radius: 3px;
+}
+.terms {
+ padding-left: 60px;
+}
+
 /*-------------------- */
 /*      Nagłówek      */
 .nav-bar {
@@ -286,8 +357,6 @@ button:focus {
 }
 .email-form {
  margin-left: 78px;
-}
-.footer label {
 }
 .form-f {
  color: #ffffff;
