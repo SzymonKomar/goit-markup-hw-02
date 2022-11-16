@@ -440,10 +440,34 @@
     <form name="service-form" autocomplete="on" novalidate>
      <h3 class="modal-header">Zostaw swoje dane w formularzu poniżej</h3>
      <div class="modal-label">
-      <label> Imie <input type="name" name="name" /></label>
-      <label> Telefon <input type="name" name="phone" /></label>
-      <label> Email <input type="email" name="email-service" /></label>
-      <label>
+      <label class="focus-within">
+       Imie
+       <span class="name-box">
+        <input type="name" name="name" />
+        <svg width="18px" height="18px" id="" class="name-modal">
+         <use href="./images/icons.svg#icon-name"></use>
+        </svg>
+       </span>
+      </label>
+      <label class="focus-within">
+       Telefon
+       <span class="name-box">
+        <input type="name" name="phone" />
+        <svg width="18px" height="18px" class="name-modal">
+         <use href="./images/icons.svg#icon-telephone"></use>
+        </svg>
+       </span>
+      </label>
+      <label class="focus-within">
+       Email
+       <span class="name-box">
+        <input type="email" name="email-service" />
+        <svg width="18px" height="18px" class="name-modal">
+         <use href="./images/icons.svg#icon-mail-modal"></use>
+        </svg>
+       </span>
+      </label>
+      <label class="focus-within">
        Komentarz<textarea
         name="comentary"
         rows="7"
@@ -454,14 +478,18 @@
      <label class="checkbox-box">
       <input type="checkbox" />
       <span class="checkbox-accept">
-       <svg width="11" height="8">
+       <svg width="14" height="11">
         <use href="./images/icons.svg#icon-Vector"></use>
        </svg>
       </span>
       <p class="terms">
-       Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
+       Oświadczam iż akceptuję <a href="#" id="terms-a">Regulamin</a> i
+       <a href="#" id="terms-a">Politykę Prywatności</a>.
       </p>
      </label>
+     <div class="button-box-send">
+      <button type="submit" class="button-modal-send">Wyślij</button>
+     </div>
     </form>
     <div class="modal-button">
      <button class="close-btn" type="button" data-modal-close>
