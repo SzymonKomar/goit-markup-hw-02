@@ -401,11 +401,11 @@ button:focus {
 /*-------------------*/
 /*      Stopka       */
 
-.footer {
+.footer-bar {
  display: flex;
  background-color: var(--main-h1-color);
 }
-.footer form {
+.footer-bar form {
  display: flex;
 }
 .email-form {
@@ -418,7 +418,7 @@ button:focus {
 .address {
  font-size: 14px;
 }
-.footer form .container-button-f {
+.footer-bar form .container-button-f {
  display: flex;
  align-items: flex-end;
  padding-left: 12px;
@@ -436,7 +436,7 @@ button:focus {
  gap: 24px;
  fill: var(--white-color);
 }
-.footer input {
+.footer-bar input {
  border: 1px rgb(255, 255, 255, 0.3) solid;
  border-radius: 5px;
  background-color: #ffffff00;
@@ -445,7 +445,7 @@ button:focus {
  display: flex;
  padding-left: 16px;
 }
-.container-footer {
+.footer-container {
  margin-top: 60px;
  margin-bottom: 60px;
  display: flex;
@@ -456,25 +456,25 @@ button:focus {
  display: flex;
  flex-direction: column;
 }
-.social-icons-container {
+.footer-box__social-icons {
  display: flex;
  flex-direction: column;
  align-items: flex-start;
  justify-content: flex-start;
  padding-left: 70px;
 }
-.social-icons-h3 {
+.social-icons__header-3 {
  color: var(--background-color);
 }
-.footer-list > *:first-child {
+.footer-box__list-footer > *:first-child {
  padding-bottom: 9px;
  padding-top: 9px;
 }
-.footer-list {
+.footer-box__list-footer {
  margin: 0px;
  font-size: 14px;
 }
-.footer-list .contacts-f {
+.footer-box__list-footer .contacts-f {
  color: var(--text-color-g);
  line-height: 1, 71em;
 }
@@ -483,10 +483,10 @@ button:focus {
  transition: cubic-bezier(0.4, 0, 0.2, 1);
  transition-duration: 250ms;
 }
-.footer-list .contacts-f:hover {
+.footer-box__list-footer .contacts-f:hover {
  color: var(--blue-color);
 }
-.container-footer > *:first-child {
+.footer-container > *:first-child {
  display: flex;
  padding-bottom: 9px;
 }
@@ -495,7 +495,7 @@ button:focus {
  color: var(--white-color);
  padding-top: 20px;
 }
-.focus-f {
+.social-icons--focus {
  display: inline-flex;
  justify-content: center;
  align-items: center;
@@ -504,16 +504,16 @@ button:focus {
  border-radius: 50%;
  background-color: var(--social-footer-bcg-color);
 }
-.focus-f:hover {
+.social-icons--focus:hover {
  background-color: var(--blue-color);
 }
-.focus-f:focus {
+.social-icons--focus:focus {
  background-color: var(--blue-color);
  transition: cubic-bezier(0.4, 0, 0.2, 1);
  transition-duration: 250ms;
  outline: none;
 }
-.icon-f {
+.social-icons__icon {
  width: 20px;
  height: 20px;
  fill: var(--white-color);
@@ -654,7 +654,7 @@ button:focus {
  align-items: center;
  justify-content: center;
 }
-.team_list-images {
+.team__list-images {
  display: inline-flex;
  align-self: center;
  justify-content: center;
@@ -684,7 +684,7 @@ button:focus {
  box-shadow: 0px 2px 5px var(--team-box-color);
  background-color: #ffffff;
 }
-.social-icons-team {
+.image-caption__icons {
  display: flex;
  align-items: center;
  justify-content: center;
@@ -693,7 +693,7 @@ button:focus {
  padding-bottom: 30px;
 }
 
-.focus-t {
+.image-caption__icons--focus {
  display: inline-flex;
  align-items: center;
  justify-content: center;
@@ -704,19 +704,19 @@ button:focus {
 .icon-team {
  fill: var(--icons-grey-color);
 }
-.focus-t:hover {
+.image-caption__icons--focus:hover {
  background-color: var(--blue-color);
 }
-.focus-t:focus {
+.image-caption__icons--focus:focus {
  background-color: var(--blue-color);
  transition: cubic-bezier(0.4, 0, 0.2, 1);
  transition-duration: 250ms;
  outline: none;
 }
-.focus-t:hover .icon-team {
+.image-caption__icons--focus:hover .icon-team {
  fill: var(--white-color);
 }
-.focus-t:focus .icon-team {
+.image-caption__icons--focus:focus .icon-team {
  fill: var(--white-color);
  transition: cubic-bezier(0.4, 0, 0.2, 1);
  transition-duration: 250ms;
@@ -724,33 +724,33 @@ button:focus {
 
 /*-------------------*/
 /*Nasi klienci*/
-.clients {
+.index__clients {
  display: flex;
  flex-direction: column;
 }
-.container-clients {
+.clients-container {
  width: 1170px;
 }
-.clients-h2 {
+.clients__header-2 {
  display: flex;
  align-items: center;
  justify-content: center;
 }
-.clients-box {
+.clients-container__clients-box {
  display: inline-flex;
  align-items: center;
  justify-content: center;
 }
-.clients-list {
+.clients-box__list-clients {
  display: inline-flex;
  align-content: center;
  justify-content: center;
  gap: 30px;
 }
-.clients-list .focus-c {
+.clients-box__list-clients .list-clients__logo {
  border: solid 1px #afb1b8;
 }
-.focus-c {
+.list-clients__logo {
  width: 170px;
  height: 92px;
  display: inline-flex;
@@ -758,16 +758,16 @@ button:focus {
  justify-content: center;
  fill: var(--icons-grey-color);
 }
-.focus-c:hover {
+.list-clients__logo:hover {
  fill: var(--blue-color);
 }
-.focus-c:focus {
+.list-clients__logo:focus {
  fill: var(--blue-color);
  transition: cubic-bezier(0.4, 0, 0.2, 1);
  transition-duration: 250ms;
  outline: none;
 }
-.icon-c {
+.list-clients--focus {
  width: 106px;
  height: 60px;
 }
