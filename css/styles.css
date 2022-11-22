@@ -25,7 +25,7 @@ ul {
  list-style: none;
  padding: 0px;
 }
-.container {
+.container-global {
  width: 1200px;
  margin: 0 auto;
 }
@@ -244,13 +244,13 @@ button:focus {
 }
 /*-------------------- */
 /*      Nagłówek      */
-.nav-bar {
+.header-bar {
  border-bottom: solid 1px #eeeeee;
  display: flex;
  align-items: center;
  padding: 0;
 }
-.container-nav-bar {
+.navigation-container {
  display: flex;
  align-items: center;
  justify-content: space-between;
@@ -259,7 +259,7 @@ button:focus {
  padding-right: 100px;
 }
 
-.nav-list {
+.navigation__list-pages {
  font-weight: 500;
  line-height: 1, 14em;
  display: inline-flex;
@@ -269,14 +269,10 @@ button:focus {
  margin-bottom: 0;
  margin-top: 0;
 }
-.nav-list .underline {
- display: flex;
- top: 2px;
-}
-.current-site-index {
+.list-pages--index {
  position: relative;
 }
-.current-site-index::after {
+.list-pages--index::after {
  position: absolute;
  content: "";
  top: 28px;
@@ -306,68 +302,68 @@ button:focus {
  margin-top: 10px;
 }
 
-.contacts {
+.header-bar__contacts-list {
  display: flex;
  justify-content: flex-end;
  align-items: center;
  gap: 50px;
  font-size: 14px;
 }
-.contacts .contacts-h {
+.header-bar__contacts-list .contacts-list__contact {
  color: var(--text-color-g);
 }
-.icon-box-mail {
+.mail-box {
  display: inline-flex;
  align-items: center;
  justify-content: center;
 }
-.icon-box-mail-over:hover :nth-child(1) {
+.contacts-list__mail-box--hoover:hover :nth-child(1) {
  fill: var(--blue-color);
  color: var(--blue-color);
  transition: cubic-bezier(0.4, 0, 0.2, 1);
  transition-duration: 250ms;
 }
-.icon-box-mail-over .focus-h:focus svg {
+.contacts-list__mail-box--hoover .global-header--focus:focus svg {
  fill: var(--blue-color);
  transition: cubic-bezier(0.4, 0, 0.2, 1);
  transition-duration: 250ms;
 }
-.mail-icon {
+.mail-box__mail-icon {
  width: 26px;
  height: 12px;
  cursor: pointer;
  fill: var(--text-color-g);
  padding-right: 10px;
 }
-.focus-h .mail-icon {
+.global-header--focus .mail-box__mail-icon {
  display: flex;
 }
-.icon-box-tel {
+.icon-box__tel-box {
  display: inline-flex;
  align-items: center;
  justify-content: center;
 }
-.icon-box-tel-over {
+.contacts-list__icon-box {
  display: flex;
 }
-.icon-box-tel-over:hover :nth-child(1) {
+.contacts-list__icon-box:hover :nth-child(1) {
  fill: var(--blue-color);
  color: var(--blue-color);
  transition: cubic-bezier(0.4, 0, 0.2, 1);
  transition-duration: 250ms;
 }
-.icon-box-tel-over:focus :nth-child(1) {
+.contacts-list__icon-box:focus :nth-child(1) {
  fill: var(--blue-color);
  color: var(--blue-color);
  transition: cubic-bezier(0.4, 0, 0.2, 1);
  transition-duration: 250ms;
 }
-.icon-box-tel-over .focus-h:focus svg {
+.contacts-list__icon-box .global-header--focus:focus svg {
  fill: var(--blue-color);
  transition: cubic-bezier(0.4, 0, 0.2, 1);
  transition-duration: 250ms;
 }
-.tel-icon {
+.tel-box__tel-icon {
  width: 20px;
  height: 16px;
  display: flex;
@@ -376,18 +372,18 @@ button:focus {
  fill: var(--text-color-g);
  padding-right: 10px;
 }
-.contacts-h {
+.contacts-list__contact {
  font-weight: 500;
  line-height: 1, 14em;
  color: var(--text-color-g);
  font-size: 14px;
 }
-.contacts-h:focus {
+.contacts-list__contact:focus {
  color: var(--blue-color);
  transition: cubic-bezier(0.4, 0, 0.2, 1);
  transition-duration: 250ms;
 }
-.name {
+.company-name {
  font-family: "Raleway", sans-serif;
  font-weight: 700;
  line-height: 1, 15em;
@@ -395,7 +391,7 @@ button:focus {
  font-size: 26px;
  cursor: pointer;
 }
-.nav {
+.navigation {
  font-weight: 500;
  line-height: 1, 14em;
 }
@@ -533,26 +529,26 @@ button:focus {
 }
 /*-----------------------*/
 /* Efektywne rozwiązania */
-.main-h1 {
+.index__service {
  display: flex;
  align-items: center;
  justify-content: center;
  background-color: var(--main-h1-color);
  height: 600px;
 }
-.main-h1 {
+.index__service {
  background-image: url("../images/background.jpg"),
   linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
  background-repeat: no-repeat;
  background-size: cover;
 }
-.container-main-h1 {
+.service-container {
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
 }
-.main-text {
+.service__header-1 {
  text-indent: -26px;
  margin: 0;
  margin-bottom: 30px;
@@ -561,7 +557,7 @@ button:focus {
  color: var(--white-color);
  font-size: 44px;
 }
-.button1 {
+.service__button {
  background-color: var(--blue-color);
  color: var(--white-color);
  cursor: pointer;
@@ -575,37 +571,37 @@ button:focus {
 
 /*------------------*/
 /*      Zalety      */
-.advantages {
+.index__advantages {
  display: flex;
  align-items: center;
  justify-content: center;
 }
-.container-adventages {
+.advantages-container {
  display: flex;
  justify-content: center;
  width: 1170px;
 }
-.advantages-list {
+.advantages__list {
  display: inline-flex;
  padding: 0;
  margin: 0;
  gap: 30px;
 }
-.advantages-list svg {
+.advantages__list svg {
  display: inline-flex;
  align-items: center;
  justify-content: center;
 }
-.advantages-title {
+.advantages__header-3 {
  font-weight: 700;
  line-height: 1, 17em;
 }
-.advantages-text {
+.advantages__text {
  line-height: 1, 5em;
  color: var(--text-color-g);
  font-size: 14px;
 }
-.advantages-icons {
+.advantages__icon {
  display: flex;
  align-items: center;
  justify-content: center;
@@ -615,76 +611,76 @@ button:focus {
 }
 /*------------------*/
 /* Czym się zajmujemy */
-.projects {
+.index__projects {
  display: flex;
  justify-content: center;
  align-items: center;
 }
-.container-projects {
+.projects-container {
  display: flex;
  align-items: center;
  flex-direction: column;
  justify-content: center;
  width: 1170px;
 }
-.projects-h2 {
+.projects__header-2 {
  font-weight: 700;
  line-height: 1, 17em;
 }
-.projects-images {
+.projects__images-list {
  display: inline-flex;
  gap: 30px;
 }
 /*--------------------*/
 /*     Zespół        */
-.team {
+.index__team {
  display: flex;
  flex-direction: column;
  align-items: center;
  justify-content: center;
  background-color: #f5f4fa;
 }
-.container-team {
+.team-container {
  display: flex;
  flex-direction: column;
  align-items: center;
  justify-content: center;
  padding-left: 40px;
 }
-.team-h2 {
+.team__header-2 {
  font-weight: 700;
  line-height: 1, 17em;
  display: flex;
  align-items: center;
  justify-content: center;
 }
-.team-images {
+.team_list-images {
  display: inline-flex;
  align-self: center;
  justify-content: center;
  padding: 0px;
  gap: 30px;
 }
-.team-header {
+.image-caption__header-1 {
  font-weight: 500;
  line-height: 1, 17em;
  display: flex;
  justify-content: center;
  align-items: center;
 }
-.team-p {
+.image-caption__text {
  color: var(--text-color-g);
  line-height: 1, 17em;
  display: flex;
  justify-content: center;
  align-items: center;
 }
-.image-team {
+.list-images__image {
  margin: 0px;
  display: inline-flex;
  flex-direction: column;
 }
-.team-caption {
+.image-caption {
  box-shadow: 0px 2px 5px var(--team-box-color);
  background-color: #ffffff;
 }

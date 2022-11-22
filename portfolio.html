@@ -19,45 +19,62 @@
  </head>
 
  <body class="whole-site">
-  <header class="nav-bar">
-   <div class="container">
-    <div class="container-nav-bar">
-     <a class="name"><span class="Web">Web</span>Studio</a>
-     <nav class="nav">
-      <ul class="nav-list">
-       <li>
+  <header class="header-bar">
+   <!-- z nav-bar X-->
+   <div class="container-global">
+    <!--z container X-->
+    <div class="navigation-container">
+     <!-- z container-nav-bar X-->
+     <a class="company-name"><span class="Web">Web</span>Studio</a>
+     <!--z name-->
+     <nav class="navigation">
+      <!--z nav X-->
+      <ul class="navigation__list-pages">
+       <!--z nav-list X -->
+       <li class="list-pages--index">
+        <!-- current-site-index X -->
         <a class="link" href="index.html">Agencja </a>
        </li>
-       <li class="current-site-portfolio">
-        <a class="link portfolio" href="portfolio.html">Portfolio </a>
-       </li>
+       <li><a href="portfolio.html">Portfolio</a></li>
        <li><a href="">Kontakty</a></li>
       </ul>
      </nav>
-     <ul class="contacts">
-      <div class="icon-box-mail-over">
-       <div class="icon-box-mail">
-        <a href="#" class="focus-h">
-         <svg class="mail-icon" width="16px" height="12px">
+     <ul class="header-bar__contacts-list">
+      <!--z contacts X-->
+      <div class="contacts-list__mail-box--hoover">
+       <!--z icon-box-mail-over X-->
+       <div class="mail-box">
+        <!--z icon-box-mail X -->
+        <a href="#" class="global-header--focus">
+         <!--z focus-h X-->
+         <svg class="mail-box__mail-icon" width="16px" height="12px">
+          <!--z mail-icon X -->
           <use href="./images/icons.svg#icon-mail"></use>
          </svg>
         </a>
         <li>
-         <a href="mailto:info@devstudio.com" class="contacts-h">
+         <a href="mailto:info@devstudio.com" class="contacts-list__contact">
+          <!--z contacts-h X-->
           info@devstudio.com</a
          >
         </li>
        </div>
       </div>
-      <div class="icon-box-tel-over">
-       <div class="icon-box-tel">
-        <a href="#" class="focus-h">
-         <svg class="tel-icon" width="10x" height="16px">
+      <div class="contacts-list__icon-box">
+       <!--z icon-box-tel-over X-->
+       <div class="icon-box__tel-box">
+        <!--z icon-box-tel x -->
+        <a href="#" class="global-header--focus">
+         <svg class="tel-box__tel-icon" width="10x" height="16px">
+          <!--z tel-icon X-->
           <use href="./images/icons.svg#icon-smartphone"></use>
          </svg>
         </a>
         <li>
-         <a href="tel:+48111111111" class="contacts-h">+48 111 111 111</a>
+         <a href="tel:+48111111111" class="contacts-list__contact"
+          >+48 111 111 111</a
+         >
+         <!--z contacts-h X-->
         </li>
        </div>
       </div>
