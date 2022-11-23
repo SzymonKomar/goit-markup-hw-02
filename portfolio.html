@@ -20,90 +20,71 @@
 
  <body class="whole-site">
   <header class="header-bar">
-   <!-- z nav-bar X-->
    <div class="container-global">
-    <!--z container X-->
-    <div class="navigation-container">
-     <!-- z container-nav-bar X-->
+    <div class="header-bar__container">
      <a class="company-name"><span class="Web">Web</span>Studio</a>
-     <!--z name-->
-     <nav class="navigation">
-      <!--z nav X-->
-      <ul class="navigation__list-pages">
-       <!--z nav-list X -->
-       <li class="list-pages--index">
-        <!-- current-site-index X -->
+     <nav class="header-bar__navigation">
+      <ul class="header-bar__list-pages">
+       <li>
         <a class="link" href="index.html">Agencja </a>
        </li>
-       <li><a href="portfolio.html">Portfolio</a></li>
+       <li class="list-pages--portfolio">
+        <a href="portfolio.html">Portfolio</a>
+       </li>
        <li><a href="">Kontakty</a></li>
       </ul>
      </nav>
      <ul class="header-bar__contacts-list">
-      <!--z contacts X-->
-      <div class="contacts-list__mail-box--hoover">
-       <!--z icon-box-mail-over X-->
-       <div class="mail-box">
-        <!--z icon-box-mail X -->
-        <a href="#" class="global-header--focus">
-         <!--z focus-h X-->
-         <svg class="mail-box__mail-icon" width="16px" height="12px">
-          <!--z mail-icon X -->
-          <use href="./images/icons.svg#icon-mail"></use>
-         </svg>
-        </a>
-        <li>
-         <a href="mailto:info@devstudio.com" class="contacts-list__contact">
-          <!--z contacts-h X-->
-          info@devstudio.com</a
-         >
-        </li>
-       </div>
+      <div class="header-bar__mail-box">
+       <a href="#" class="header-bar__mail-box--focus">
+        <svg class="header-bar__mail-icon" width="16px" height="12px">
+         <use href="./images/icons.svg#icon-mail"></use>
+        </svg>
+       </a>
+       <li>
+        <a href="mailto:info@devstudio.com" class="contacts-list__contact">
+         info@devstudio.com</a
+        >
+       </li>
       </div>
-      <div class="contacts-list__icon-box">
-       <!--z icon-box-tel-over X-->
-       <div class="icon-box__tel-box">
-        <!--z icon-box-tel x -->
-        <a href="#" class="global-header--focus">
-         <svg class="tel-box__tel-icon" width="10x" height="16px">
-          <!--z tel-icon X-->
-          <use href="./images/icons.svg#icon-smartphone"></use>
-         </svg>
-        </a>
-        <li>
-         <a href="tel:+48111111111" class="contacts-list__contact"
-          >+48 111 111 111</a
-         >
-         <!--z contacts-h X-->
-        </li>
-       </div>
+      <div class="header-bar__tel-box">
+       <a href="#" class="header-bar__tel-box--focus">
+        <svg class="header-bar__tel-icon" width="10x" height="16px">
+         <use href="./images/icons.svg#icon-smartphone"></use>
+        </svg>
+       </a>
+       <li>
+        <a href="tel:+48111111111" class="contacts-list__contact"
+         >+48 111 111 111</a
+        >
+       </li>
       </div>
      </ul>
     </div>
    </div>
   </header>
-  <main class="main-content">
+  <main class="portfolio">
    <section class="buttons">
-    <div class="container">
-     <div class="container-buttons">
+    <div class="container-global">
+     <div class="buttons__container">
       <ul>
-       <li><button class="button2" type="submit">Wszystkie</button></li>
-       <li><button class="button2" type="submit">Strony</button></li>
-       <li><button class="button2" type="submit">Aplikacje</button></li>
-       <li><button class="button2" type="submit">Design</button></li>
-       <li><button class="button2" type="submit">Marketing</button></li>
+       <li><button class="buttons__button" type="submit">Wszystkie</button></li>
+       <li><button class="buttons__button" type="submit">Strony</button></li>
+       <li><button class="buttons__button" type="submit">Aplikacje</button></li>
+       <li><button class="buttons__button" type="submit">Design</button></li>
+       <li><button class="buttons__button" type="submit">Marketing</button></li>
       </ul>
      </div>
     </div>
    </section>
    <section class="products">
-    <div class="container">
-     <div class="container-products">
-      <ul>
+    <div class="container-global">
+     <div class="products__container">
+      <ul class="products__list">
        <li>
-        <figure class="image">
-         <div class="box-overlay">
-          <div class="overlay">
+        <figure class="products__image">
+         <div class="products__overlay-box">
+          <div class="products__overlay">
            <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -114,22 +95,22 @@
            </p>
           </div>
           <img
-           src="images\laptop (1).jpg"
+           src="/images/laptop (1).jpg"
            alt="Laptop wyświetlający stronę internetową"
            width="370"
            lenght="294"
           />
          </div>
-         <figcaption class="products-caption">
-          <h3 class="caption-header">Technocrack</h3>
-          <p class="caption-p">Strona internetowa</p>
+         <figcaption class="products__caption">
+          <h3 class="products__header-3">Technocrack</h3>
+          <p class="products__text">Strona internetowa</p>
          </figcaption>
         </figure>
        </li>
        <li>
-        <figure class="image">
-         <div class="box-overlay">
-          <div class="overlay">
+        <figure class="products__image">
+         <div class="products__overlay-box">
+          <div class="products__overlay">
            <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -146,16 +127,16 @@
            lenght="294"
           />
          </div>
-         <figcaption class="products-caption">
-          <h3 class="caption-header">Grafika New Orlean vs Golden Star</h3>
-          <p class="caption-p">Design</p>
+         <figcaption class="products__caption">
+          <h3 class="products__header-3">Grafika New Orlean vs Golden Star</h3>
+          <p class="products__text">Design</p>
          </figcaption>
         </figure>
        </li>
        <li>
-        <figure class="image">
-         <div class="box-overlay">
-          <div class="overlay">
+        <figure class="products__image">
+         <div class="products__overlay-box">
+          <div class="products__overlay">
            <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -172,16 +153,16 @@
            lenght="294"
           />
          </div>
-         <figcaption class="products-caption">
-          <h3 class="caption-header">Restauracja Seafood</h3>
-          <p class="caption-p">Aplikacja</p>
+         <figcaption class="products__caption">
+          <h3 class="products__header-3">Restauracja Seafood</h3>
+          <p class="products__text">Aplikacja</p>
          </figcaption>
         </figure>
        </li>
        <li>
-        <figure class="image">
-         <div class="box-overlay">
-          <div class="overlay">
+        <figure class="products__image">
+         <div class="products__overlay-box">
+          <div class="products__overlay">
            <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -198,16 +179,16 @@
            lenght="294"
           />
          </div>
-         <figcaption class="products-caption">
-          <h3 class="caption-header">Projekt Primes</h3>
-          <p class="caption-p">Marketing</p>
+         <figcaption class="products__caption">
+          <h3 class="products__header-3">Projekt Primes</h3>
+          <p class="products__text">Marketing</p>
          </figcaption>
         </figure>
        </li>
        <li>
-        <figure class="image">
-         <div class="box-overlay">
-          <div class="overlay">
+        <figure class="products__image">
+         <div class="products__overlay-box">
+          <div class="products__overlay">
            <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -224,16 +205,16 @@
            lenght="294"
           />
          </div>
-         <figcaption class="products-caption">
-          <h3 class="caption-header">Projekt Boxes</h3>
-          <p class="caption-p">Aplikacja</p>
+         <figcaption class="products__caption">
+          <h3 class="products__header-3">Projekt Boxes</h3>
+          <p class="products__text">Aplikacja</p>
          </figcaption>
         </figure>
        </li>
        <li>
-        <figure class="image">
-         <div class="box-overlay">
-          <div class="overlay">
+        <figure class="products__image">
+         <div class="products__overlay-box">
+          <div class="products__overlay">
            <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -250,16 +231,16 @@
            lenght="294"
           />
          </div>
-         <figcaption class="products-caption">
-          <h3 class="caption-header">Inspiration has no Borders</h3>
-          <p class="caption-p">Strona internetowa</p>
+         <figcaption class="products__caption">
+          <h3 class="products__header-3">Inspiration has no Borders</h3>
+          <p class="products__text">Strona internetowa</p>
          </figcaption>
         </figure>
        </li>
        <li>
-        <figure class="image">
-         <div class="box-overlay">
-          <div class="overlay">
+        <figure class="products__image">
+         <div class="products__overlay-box">
+          <div class="products__overlay">
            <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -276,16 +257,16 @@
            lenght="294"
           />
          </div>
-         <figcaption class="products-caption">
-          <h3 class="caption-header">Magazyn Limited Edition</h3>
-          <p class="caption-p">Desing</p>
+         <figcaption class="products__caption">
+          <h3 class="products__header-3">Magazyn Limited Edition</h3>
+          <p class="products__text">Desing</p>
          </figcaption>
         </figure>
        </li>
        <li>
-        <figure class="image">
-         <div class="box-overlay">
-          <div class="overlay">
+        <figure class="products__image">
+         <div class="products__overlay-box">
+          <div class="products__overlay">
            <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -302,16 +283,16 @@
            lenght="294"
           />
          </div>
-         <figcaption class="products-caption">
-          <h3 class="caption-header">Projekt LAB</h3>
-          <p class="caption-p">Marketing</p>
+         <figcaption class="products__caption">
+          <h3 class="products__header-3">Projekt LAB</h3>
+          <p class="products__text">Marketing</p>
          </figcaption>
         </figure>
        </li>
        <li>
-        <figure class="image">
-         <div class="box-overlay">
-          <div class="overlay">
+        <figure class="products__image">
+         <div class="products__overlay-box">
+          <div class="products__overlay">
            <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -328,9 +309,9 @@
            lenght="294"
           />
          </div>
-         <figcaption class="products-caption">
-          <h3 class="caption-header">Growing Business</h3>
-          <p class="caption-p">Aplikacja</p>
+         <figcaption class="products__caption">
+          <h3 class="products__header-3">Growing Business</h3>
+          <p class="products__text">Aplikacja</p>
          </figcaption>
         </figure>
        </li>
@@ -339,53 +320,55 @@
     </div>
    </section>
   </main>
-  <footer class="footer">
-   <div class="container">
-    <div class="container-footer">
-     <div class="footer-block">
-      <a class="name"><span class="Web">Web</span>Studio</a>
-      <address class="address">m. Warszawa, Aleje Jerozolimskie 21</address>
-      <ul class="footer-list">
+  <footer class="footer-bar">
+   <div class="container-global">
+    <div class="footer-bar__container">
+     <div class="footer-bar__footer-box">
+      <a class="company-name"><span class="Web">Web</span>Studio</a>
+      <address class="footer-bar__address">
+       m. Warszawa, Aleje Jerozolimskie 21
+      </address>
+      <ul class="footer-bar__list">
        <li>
-        <a href="mailto:info@example.com" class="contacts-f"
+        <a href="mailto:info@example.com" class="footer-bar__contact"
          >info@example.com</a
         >
        </li>
        <li>
-        <a href="tel:+48111111111" class="contacts-f">+48 111 111 111</a>
+        <a href="tel:+48111111111" class="footer-bar__contact"
+         >+48 111 111 111</a
+        >
        </li>
       </ul>
      </div>
-     <div class="social-icons-container">
-      <h3 class="social-icons-h3">DOŁĄCZ DO NAS</h3>
-      <div class="social-icons">
-       <a href="#" class="focus-f">
-        <svg width="54px" height="44px" class="icon-f">
-         <use href="./images/icons.svg#icon-instagram"></use>
-        </svg>
-       </a>
-       <a href="#" class="focus-f">
-        <svg width="54px" height="44px" class="icon-f">
-         <use href="./images/icons.svg#icon-twitter"></use>
-        </svg>
-       </a>
-       <a href="#" class="focus-f">
-        <svg width="54px" height="44px" class="icon-f">
-         <use href="./images/icons.svg#icon-facebook"></use>
-        </svg>
-       </a>
-       <a href="#" class="focus-f">
-        <svg width="54px" height="44px" class="icon-f">
-         <use href="./images/icons.svg#icon-linkedin"></use>
-        </svg>
-       </a>
-      </div>
+     <div class="footer-bar__social-icons">
+      <h3 class="footer-bar__header-3">DOŁĄCZ DO NAS</h3>
+      <a href="#" class="social-icons--focus">
+       <svg width="54px" height="44px" class="footer-bar__icon">
+        <use href="./images/icons.svg#icon-instagram"></use>
+       </svg>
+      </a>
+      <a href="#" class="social-icons--focus">
+       <svg width="54px" height="44px" class="footer-bar__icon">
+        <use href="./images/icons.svg#icon-twitter"></use>
+       </svg>
+      </a>
+      <a href="#" class="social-icons--focus">
+       <svg width="54px" height="44px" class="footer-bar__icon">
+        <use href="./images/icons.svg#icon-facebook"></use>
+       </svg>
+      </a>
+      <a href="#" class="social-icons--focus">
+       <svg width="54px" height="44px" class="footer-bar__icon">
+        <use href="./images/icons.svg#icon-linkedin"></use>
+       </svg>
+      </a>
      </div>
      <div class="email-form">
       <form name="newsletter" autocomplete="on" novalidate>
        <label for="email"
         ><p class="form-f">ZAPISZ SIĘ DO NEWSLETTERA</p>
-        <input type="email" name="email" placeholder="E-mail" />
+        <input type="email" name="email-newsletter" placeholder="E-mail" />
        </label>
        <div class="container-button-f">
         <button class="button-f" type="submit">
