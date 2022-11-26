@@ -1,0 +1,55 @@
+/*========= Global settings =========*/
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+
+ul {
+ list-style: none;
+ padding: 0px;
+}
+.container-global {
+ width: 1200px;
+ margin: 0 auto;
+}
+section {
+ padding-top: 94px;
+ padding-bottom: 94px;
+}
+.whole-site {
+ font-family: "Roboto", sans-serif;
+ font-weight: 400;
+ color: var(--text-color);
+ margin: 0;
+}
+/*---- links settings ---- */
+a {
+ &:hover {
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  color: $blue-color;
+ }
+ &:focus {
+  color: $blue-color;
+ }
+ &:link {
+  color: $text-color;
+  text-decoration: none;
+ }
+ &:visited {
+  color: $text-color;
+ }
+}
+/*---- buttons settings ---- */
+button {
+ &:hover {
+  background-color: $blue-color;
+  color: $white-color;
+ }
+ &:focus {
+  background-color: $blue-color;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+ }
+}
