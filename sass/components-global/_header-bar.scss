@@ -59,7 +59,7 @@
  &::after {
   position: absolute;
   content: "";
-  top: 28px;
+  top: 27px;
   right: 0px;
   left: 0px;
   width: 53px;
@@ -71,10 +71,11 @@
 .list-pages--portfolio {
  position: relative;
  &::after {
+  content: "";
   left: 0px;
   right: 0px;
   position: absolute;
-  top: 28px;
+  top: 27px;
   width: 58px;
   height: 4px;
   border-radius: 5px;

@@ -1,0 +1,20 @@
+.projects {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ &__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 1170px;
+ }
+ &__header-2 {
+  font-weight: 700;
+  line-height: 1, 17em;
+ }
+ &__images-list {
+  display: inline-flex;
+  gap: 30px;
+ }
+}

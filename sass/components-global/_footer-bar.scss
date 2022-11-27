@@ -84,22 +84,26 @@
  &__list {
   margin: 0px;
   font-size: 14px;
+
   :nth-child(1) {
    padding-bottom: 9px;
    padding-top: 9px;
   }
  }
- &__contact {
-  color: $text-color-g;
-  line-height: 1, 71em;
- }
- &__contact:hover {
-  color: $blue-color;
- }
  &__:focus {
   color: $blue-color;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+ }
+}
+.footer-bar__list {
+ .footer-bar__contact {
+  color: $text-color-g;
+ }
+}
+.footer-bar__list {
+ .footer-bar__contact:hover {
+  color: $blue-color;
  }
 }
 .social-icons--focus {

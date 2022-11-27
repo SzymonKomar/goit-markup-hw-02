@@ -1,7 +1,12 @@
 @import "./utils/variables";
 @import "./utils/reset";
-@import "./components/backdrop";
-@import "./components/header-bar";
-@import "./components/footer-bar";
-@import "./components/service";
-@import "./components/advantages";
+@import "./components-index/backdrop";
+@import "./components-global/header-bar";
+@import "./components-global/footer-bar";
+@import "./components-index/service";
+@import "./components-index/advantages";
+@import "./components-index/projects";
+@import "./components-index/team";
+@import "./components-index/clients";
+@import "./components-portfolio/buttons";
+@import "./components-portfolio/products";
