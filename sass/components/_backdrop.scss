@@ -1,3 +1,6 @@
+.whole-site {
+ margin: 0;
+}
 .is-hidden {
  visibility: hidden;
  pointer-events: none;
@@ -28,91 +31,35 @@
  visibility: inherit;
  opacity: inherit;
  transition: ease-out 450ms;
+}
+
+.modal {
  &__button-close {
-  width: 30px;
-  height: 30px;
   position: absolute;
   right: 0%;
- }
- &__header-3 {
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
- }
- &__button-send {
-  display: flex;
-  align-items: center;
-  justify-content: center;
- }
- &__terms {
-  padding-left: 60px;
- }
-}
-.modal {
- &__checkbox {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  input {
-   position: absolute;
-   opacity: 0;
-   cursor: pointer;
-   height: 0;
-   width: 0;
-  }
-  &-icon {
-   position: absolute;
-   right: 0;
-   left: 35px;
-   fill: #ffffff;
-   border: 2px solid var(--black-color);
-   width: 18px;
-   height: 17px;
-   display: flex;
-   border-radius: 3px;
-   position: absolute;
-   top: 13px;
-   left: 10px;
-   width: 13px;
-   height: 13px;
-  }
-  input:checked ~ &__checkbox-icon {
-   background-color: var(--blue-color);
-   width: 17px;
-   height: 16px;
-   border-radius: 2px;
-   border: 1px solid var(--blue-color);
+  .close-btn {
    display: flex;
    align-items: center;
-   justify-content: center;
+   border-radius: 15px;
+   border-color: rgb(0, 0, 0, 0.1);
+  }
+  .close-btn:hover {
+   fill: $white-color;
+  }
+  .close-btn:focus {
+   fill: $white;
+   background-color: $blue-color;
+   outline: 2px solid $blue-color;
   }
  }
 }
 .close-btn {
- display: flex;
- align-items: center;
- width: 30px;
- height: 30px;
- border-radius: 15px;
- border-color: rgb(0, 0, 0, 0.1);
- &:hover {
-  fill: $white-color;
- }
- &:focus {
-  fill: $white-color;
-  background-color: $blue-color;
-  outline: none;
+ &__icon {
+  width: 14px;
+  height: 14px;
  }
 }
 .modal {
- &__input-box {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  margin-bottom: 10px;
- }
  &__container {
   label {
    padding-left: 40px;
@@ -140,30 +87,83 @@
   }
  }
 }
-
-.modal {
- &__section:focus-within {
-  fill: #2195f3da;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
- }
- &__section:focus-within input:focus {
-  outline: #2196f3;
-  border: 2px solid $blue-color;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
- }
- &__section input {
-  padding-left: 40px;
- }
- &__section:focus-within textarea:focus {
-  border: 2px solid $blue-color;
-  outline: #2196f3;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
- }
+.modal__header-3 {
+ display: flex;
+ justify-content: center;
+ font-size: 20px;
+}
+.modal__checkbox {
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+.modal__checkbox input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+ height: 0;
+ width: 0;
+}
+.modal__checkbox-icon {
+ position: absolute;
+ right: 0;
+ left: 35px;
+ fill: #ffffff;
+ border: 2px solid var(--black-color);
+ width: 18px;
+ height: 17px;
+ display: flex;
+ border-radius: 3px;
+}
+.modal__checkbox input:checked ~ .modal__checkbox-icon {
+ background-color: var(--blue-color);
+ width: 17px;
+ height: 16px;
+ border-radius: 2px;
+ border: 1px solid var(--blue-color);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.modal__terms {
+ padding-left: 60px;
+}
+.modal__input-box {
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-items: center;
+ margin-bottom: 10px;
+}
+.modal__section:focus-within {
+ fill: #2195f3da;
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
+}
+.modal__section:focus-within input:focus {
+ outline: #2196f3;
+ border: 2px solid var(--blue-color);
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
+}
+.modal__section input {
+ padding-left: 40px;
+}
+.modal__icon {
+ position: absolute;
+ top: 13px;
+ left: 10px;
+ width: 13px;
+ height: 13px;
 }
 
+.modal__section:focus-within textarea:focus {
+ border: 2px solid var(--blue-color);
+ outline: #2196f3;
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration: 250ms;
+}
 #terms-r {
  color: var(--blue-color);
  text-decoration: underline;
@@ -172,7 +172,11 @@
  color: var(--blue-color);
  text-decoration: underline;
 }
-
+.modal__button-send {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
 .button-send {
  width: 200px;
  height: 50px;
