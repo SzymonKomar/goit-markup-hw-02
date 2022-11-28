@@ -1,4 +1,24 @@
 .header-bar {
+ /*--- mobile --- */
+ display: flex;
+ padding: 0;
+ align-items: center;
+ &__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 451px;
+ }
+ &__navigation {
+  display: none;
+ }
+ &__contacts-list {
+  display: none;
+ }
+}
+
+.header-bar {
+ /*--- PC --- */
  border-bottom: solid 1px #eeeeee;
  display: flex;
  align-items: center;
