@@ -9,7 +9,7 @@
    rel="stylesheet"
    href="https://github.com/sindresorhus/modern-normalize.git"
   />
-  <link rel="stylesheet" href="css/main.min.css" type="text/css" />
+  <link rel="stylesheet" href="./css/main.min.css" type="text/css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -57,6 +57,13 @@
        </li>
       </div>
      </ul>
+     <div class="header-bar__modal-box">
+      <button class="header-bar__modal-btn">
+       <svg width="24" height="16" class="modal-btn__svg">
+        <use href="./images/icons.svg#icon-menu"></use>
+       </svg>
+      </button>
+     </div>
     </div>
    </div>
   </header>
@@ -396,29 +403,36 @@
      </div>
      <div class="footer-bar__social-icons">
       <h3 class="footer-bar__header-3">DOŁĄCZ DO NAS</h3>
-      <a href="#" class="social-icons--focus">
-       <svg width="54px" height="44px" class="footer-bar__icon">
-        <use href="./images/icons.svg#icon-instagram"></use>
-       </svg>
-      </a>
-      <a href="#" class="social-icons--focus">
-       <svg width="54px" height="44px" class="footer-bar__icon">
-        <use href="./images/icons.svg#icon-twitter"></use>
-       </svg>
-      </a>
-      <a href="#" class="social-icons--focus">
-       <svg width="54px" height="44px" class="footer-bar__icon">
-        <use href="./images/icons.svg#icon-facebook"></use>
-       </svg>
-      </a>
-      <a href="#" class="social-icons--focus">
-       <svg width="54px" height="44px" class="footer-bar__icon">
-        <use href="./images/icons.svg#icon-linkedin"></use>
-       </svg>
-      </a>
+      <div class="footer-bar__icons-box">
+       <a href="#" class="social-icons--focus">
+        <svg width="54px" height="44px" class="footer-bar__icon">
+         <use href="./images/icons.svg#icon-instagram"></use>
+        </svg>
+       </a>
+       <a href="#" class="social-icons--focus">
+        <svg width="54px" height="44px" class="footer-bar__icon">
+         <use href="./images/icons.svg#icon-twitter"></use>
+        </svg>
+       </a>
+       <a href="#" class="social-icons--focus">
+        <svg width="54px" height="44px" class="footer-bar__icon">
+         <use href="./images/icons.svg#icon-facebook"></use>
+        </svg>
+       </a>
+       <a href="#" class="social-icons--focus">
+        <svg width="54px" height="44px" class="footer-bar__icon">
+         <use href="./images/icons.svg#icon-linkedin"></use>
+        </svg>
+       </a>
+      </div>
      </div>
      <div class="footer-bar__form-box">
-      <form name="newsletter" autocomplete="on" novalidate>
+      <form
+       name="newsletter"
+       autocomplete="on"
+       novalidate
+       class="footer-bar__form"
+      >
        <label for="email"
         ><p class="footer-bar__form-text">ZAPISZ SIĘ DO NEWSLETTERA</p>
         <input type="email" name="email-newsletter" placeholder="E-mail" />

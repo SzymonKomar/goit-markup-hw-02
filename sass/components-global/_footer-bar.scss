@@ -1,12 +1,18 @@
-/*----- form ------ */
+/*--- mobile ---*/
 .footer-bar {
  display: flex;
+ flex-direction: column;
  background-color: $main-h1-color;
  form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  label {
+   margin-bottom: 20px;
+  }
  }
  &__form-box {
-  margin-left: 78px;
   input {
    color: #ffffff;
    border: 1px rgb(255, 255, 255, 0.3) solid;
@@ -26,25 +32,49 @@
  &__form-text {
   color: #ffffff;
   font-weight: 700;
+  padding-left: 60px;
  }
  &__header-3 {
   color: $background-color;
+  align-items: center;
+  justify-content: center;
  }
+}
+.container-global {
+ width: auto;
 }
 .footer-bar {
  &__footer-box {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  .company-name {
+   width: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+ }
+ &__list {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  padding-bottom: 9px;
  }
 }
-.footer-box {
+
+/*--- coś mi się pojebało --- */
+.footer-bar {
  &__social-icons {
-  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-left: 70px;
+  margin-bottom: 60px;
+  &__header-3 {
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+  }
  }
 }
 .footer-bar {
@@ -52,7 +82,9 @@
   margin-top: 60px;
   margin-bottom: 60px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
  }
 }
 .footer-bar {
@@ -76,7 +108,6 @@
   cursor: pointer;
  }
 }
-
 .address {
  font-size: 14px;
 }
@@ -112,6 +143,7 @@
  align-items: center;
  width: 44px;
  height: 44px;
+ margin-left: 10px;
  border-radius: 50%;
  background-color: $social-footer-bcg-color;
  &:hover {
@@ -133,4 +165,143 @@
  width: 20px;
  height: 20px;
  fill: $white-color;
+}
+/*--- PC ---*/
+@media screen and (min-width: 1200px) {
+ .footer-bar {
+  display: flex;
+  background-color: $main-h1-color;
+  flex-direction: row;
+  form {
+   display: flex;
+  }
+  &__form-box {
+   margin-left: 78px;
+   input {
+    color: #ffffff;
+    border: 1px rgb(255, 255, 255, 0.3) solid;
+    border-radius: 5px;
+    background-color: #ffffff00;
+    width: 358px;
+    height: 50px;
+    display: flex;
+    padding-left: 16px;
+    align-items: center;
+    flex-direction: row;
+   }
+   input:focus {
+    outline: 2px solid $text-color-g;
+   }
+  }
+  &__form-text {
+   color: #ffffff;
+   font-weight: 700;
+  }
+  &__header-3 {
+   color: $background-color;
+  }
+ }
+ .footer-bar {
+  &__footer-box {
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 9px;
+  }
+ }
+ .footer-box {
+  &__social-icons {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   margin-left: 70px;
+  }
+ }
+ .footer-bar {
+  &__container {
+   margin-top: 60px;
+   margin-bottom: 60px;
+   display: flex;
+   justify-content: space-between;
+  }
+ }
+ .footer-bar {
+  &__button-box {
+   display: flex;
+   align-items: flex-end;
+   padding-left: 12px;
+  }
+  &__button {
+   width: 200px;
+   height: 50px;
+   background-color: $blue-color;
+   color: $white-color;
+   border: 1px $blue-color solid;
+   border-radius: 5px;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   gap: 24px;
+   fill: $white-color;
+   cursor: pointer;
+  }
+ }
+
+ .address {
+  font-size: 14px;
+ }
+ .footer-bar {
+  &__list {
+   margin: 0px;
+   font-size: 14px;
+
+   :nth-child(1) {
+    padding-bottom: 9px;
+    padding-top: 9px;
+   }
+  }
+  &__:focus {
+   color: $blue-color;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: 250ms;
+  }
+ }
+ .footer-bar__list {
+  .footer-bar__contact {
+   color: $text-color-g;
+  }
+ }
+ .footer-bar__list {
+  .footer-bar__contact:hover {
+   color: $blue-color;
+  }
+ }
+ .social-icons--focus {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $social-footer-bcg-color;
+  &:hover {
+   background-color: $blue-color;
+  }
+  &:focus {
+   background-color: $blue-color;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: 250ms;
+   outline: none;
+  }
+ }
+ .footer-bar__address {
+  line-height: 1, 71em;
+  color: $white-color;
+  padding-top: 20px;
+ }
+ .footer-bar__icon {
+  width: 20px;
+  height: 20px;
+  fill: $white-color;
+ }
 }
