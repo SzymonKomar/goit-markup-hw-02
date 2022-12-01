@@ -1,50 +1,59 @@
-.clients {
- display: flex;
- &__header-2 {
+@media screen and (max-width: 767px) {
+ .clients {
   display: flex;
-  align-items: center;
-  justify-content: center;
- }
- &__clients-box {
-  display: flex;
+  &__header-2 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+  &__clients-box {
+   display: flex;
+  }
  }
 }
-.clients {
- &__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
- }
- &__logo {
-  fill: $icons-grey-color;
- }
- &__list--focus {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 92px;
-  border: solid 1px #afb1b8;
-  border-radius: 5px;
- }
- &__list--focus:focus {
-  border: 1px solid $blue-color;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-  outline: none;
- }
- /* --- tu coś nie działa --- */
- &__list--focus:focus-within {
-  .clients-logo:focus {
-   svg {
-    fill: $blue-color;
+@media screen and (max-width: 767px) {
+ .clients {
+  &__list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+   align-items: center;
+   justify-content: center;
+  }
+  &__logo {
+   fill: $icons-grey-color;
+  }
+  &__list--focus {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 170px;
+   height: 92px;
+   border: solid 1px #afb1b8;
+   border-radius: 5px;
+  }
+  &__list--focus:focus {
+   border: 1px solid $blue-color;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: 250ms;
+   outline: none;
+  }
+  .clients {
+   &__list--focus:focus {
+    border: 1px solid $blue-color;
+    outline: none;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    .clients__logo {
+     fill: $blue-color;
+     transition: cubic-bezier(0.4, 0, 0.2, 1);
+     transition-duration: 250ms;
+    }
    }
   }
  }
 }
-
+/*--- PC ---*/
 @media screen and (min-width: 1200px) {
  .clients {
   display: flex;
@@ -91,12 +100,14 @@
     transition-duration: 250ms;
    }
   }
+ }
+ .clients {
   &__list--focus:focus {
    border: 1px solid $blue-color;
+   outline: none;
    transition: cubic-bezier(0.4, 0, 0.2, 1);
    transition-duration: 250ms;
-   outline: none;
-   .clients-logo {
+   .clients__logo {
     fill: $blue-color;
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
