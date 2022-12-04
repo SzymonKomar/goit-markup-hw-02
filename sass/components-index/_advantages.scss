@@ -48,6 +48,13 @@
   background-color: #f5f4fa;
  }
 }
+@media screen and (max-width: 767px) {
+ .advantages {
+  &__list {
+   width: 450px;
+  }
+ }
+}
 /*--- PC ---*/
 @media screen and (min-width: 1200px) {
  .advantages {
