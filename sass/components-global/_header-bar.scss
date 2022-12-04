@@ -3,11 +3,13 @@
   display: flex;
   padding: 0;
   align-items: center;
+  justify-content: center;
   &__container {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   width: 451px;
+   padding-left: 15px;
+   padding-right: 15px;
   }
   &__navigation {
    display: none;
