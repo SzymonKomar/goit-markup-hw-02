@@ -1,5 +1,5 @@
 /*--- mobile-settings ---*/
-@media screen and (min-width: 480px) and (max-width: 760px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
  .footer-bar {
   display: flex;
   background-color: $main-h1-color;
@@ -48,7 +48,7 @@
   }
  }
 }
-@media screen and (min-width: 480px) and (max-width: 760px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
  .footer-bar {
   &__address {
    display: flex;
@@ -73,7 +73,7 @@
   }
  }
 }
-@media screen and (min-width: 480px) and (max-width: 760px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
  .footer-bar {
   &__social-icons {
    justify-content: center;
@@ -89,7 +89,7 @@
   }
  }
 }
-@media screen and (min-width: 480px) and (max-width: 760px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
  .social-icons--focus {
   display: inline-flex;
   justify-content: center;
@@ -200,7 +200,7 @@
 }
 /*------*/
 /*--- tablet-settings ---*/
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
  .footer-bar {
   &__container {
    margin-top: 60px;
@@ -252,7 +252,7 @@
   }
  }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
  .footer-bar {
   &__footer-box {
    align-items: center;
@@ -275,7 +275,7 @@
   }
  }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
  .footer-bar {
   &__social-icons {
    grid-column: 2;
@@ -293,7 +293,7 @@
   }
  }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
  .social-icons--focus {
   display: inline-flex;
   justify-content: center;

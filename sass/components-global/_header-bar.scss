@@ -32,6 +32,70 @@
   transition-duration: 250ms;
  }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+ .header-bar {
+  display: flex;
+  &__container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+  }
+  &__modal-box {
+   display: none;
+  }
+  &__contacts-list {
+   flex-direction: column;
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   justify-content: center;
+  }
+ }
+ .header-bar {
+  &__navigation {
+   display: flex;
+  }
+  &__list-pages {
+   display: flex;
+   gap: 60px;
+   font-weight: 500;
+   font-size: 14px;
+  }
+ }
+ .list-pages--index {
+  position: relative;
+  &::after {
+   position: absolute;
+   content: "";
+   top: 44px;
+   right: 0px;
+   left: 0px;
+   width: 53px;
+   height: 4px;
+   border-radius: 5px;
+   background-color: $blue-color;
+  }
+ }
+ .list-pages--portfolio {
+  position: relative;
+  &::after {
+   content: "";
+   left: 0px;
+   right: 0px;
+   position: absolute;
+   top: 44px;
+   width: 58px;
+   height: 4px;
+   border-radius: 5px;
+   background-color: $blue-color;
+  }
+ }
+ .link:focus {
+  color: $blue-color;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+ }
+}
 @media screen and (min-width: 1200px) {
  .header-bar {
   /*--- PC --- */
@@ -78,14 +142,42 @@
    display: none;
   }
  }
-}
-.header-bar {
- &__contacts-list {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 50px;
-  font-size: 14px;
+ .header-bar {
+  &__contacts-list {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 50px;
+   font-size: 14px;
+  }
+ }
+ .list-pages--portfolio {
+  position: relative;
+  &::after {
+   content: "";
+   left: 0px;
+   right: 0px;
+   position: absolute;
+   top: 27px;
+   width: 58px;
+   height: 4px;
+   border-radius: 5px;
+   background-color: $blue-color;
+  }
+ }
+ .list-pages--index {
+  position: relative;
+  &::after {
+   position: absolute;
+   content: "";
+   top: 27px;
+   right: 0px;
+   left: 0px;
+   width: 53px;
+   height: 4px;
+   border-radius: 5px;
+   background-color: $blue-color;
+  }
  }
 }
 
@@ -93,34 +185,6 @@
  color: $text-color-g;
 }
 
-.list-pages--index {
- position: relative;
- &::after {
-  position: absolute;
-  content: "";
-  top: 27px;
-  right: 0px;
-  left: 0px;
-  width: 53px;
-  height: 4px;
-  border-radius: 5px;
-  background-color: $blue-color;
- }
-}
-.list-pages--portfolio {
- position: relative;
- &::after {
-  content: "";
-  left: 0px;
-  right: 0px;
-  position: absolute;
-  top: 27px;
-  width: 58px;
-  height: 4px;
-  border-radius: 5px;
-  background-color: $blue-color;
- }
-}
 .contacts-list {
  &__contact {
   font-weight: 500;
