@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
  .clients {
   display: flex;
   &__header-2 {
@@ -12,7 +12,7 @@
   }
  }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
  .clients {
   &__list {
    display: grid;
@@ -55,6 +55,80 @@
      transition: cubic-bezier(0.4, 0, 0.2, 1);
      transition-duration: 250ms;
     }
+   }
+  }
+ }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+ .clients {
+  display: flex;
+  &__container {
+   display: flex;
+   flex-direction: column;
+  }
+  &__header-2 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+  &__clients-box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+ }
+ .clients {
+  &__list {
+   display: grid;
+   align-content: center;
+   justify-content: center;
+   gap: 30px;
+  }
+  &__list :nth-child(1) {
+   grid-column: 1;
+   grid-row: 1;
+  }
+  &__list :nth-child(2) {
+   grid-column: 2;
+   grid-row: 1;
+  }
+  &__list :nth-child(3) {
+   grid-column: 3;
+   grid-row: 1;
+  }
+  &__logo {
+   fill: $icons-grey-color;
+  }
+  &__list--focus {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 170px;
+   height: 92px;
+   border: solid 1px #afb1b8;
+   border-radius: 5px;
+  }
+  &__list--focus:hover {
+   border: 1px solid $blue-color;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: 250ms;
+   .clients__logo {
+    fill: $blue-color;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+   }
+  }
+ }
+ .clients {
+  &__list--focus:focus {
+   border: 1px solid $blue-color;
+   outline: none;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: 250ms;
+   .clients__logo {
+    fill: $blue-color;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
    }
   }
  }
