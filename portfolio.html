@@ -22,7 +22,10 @@
   <header class="header-bar">
    <div class="container-global">
     <div class="header-bar__container">
-     <a class="company-name"><span class="Web">Web</span>Studio</a>
+     <a class="company-name"
+      ><span class="web">Web</span>
+      <p class="studio">Studio</p></a
+     >
      <nav class="header-bar__navigation">
       <ul class="header-bar__list-pages">
        <li>
@@ -34,32 +37,41 @@
        <li><a class="link" href="">Kontakty</a></li>
       </ul>
      </nav>
-     <ul class="header-bar__contacts-list">
-      <div class="header-bar__mail-box">
-       <a href="#" class="header-bar__mail-box--focus">
-        <svg class="header-bar__mail-icon" width="16px" height="12px">
-         <use href="./images/icons.svg#icon-mail"></use>
-        </svg>
-       </a>
-       <li>
-        <a href="mailto:info@devstudio.com" class="contacts-list__contact">
-         info@devstudio.com</a
-        >
-       </li>
-      </div>
-      <div class="header-bar__tel-box">
-       <a href="#" class="header-bar__tel-box--focus">
-        <svg class="header-bar__tel-icon" width="10x" height="16px">
-         <use href="./images/icons.svg#icon-smartphone"></use>
-        </svg>
-       </a>
-       <li>
-        <a href="tel:+48111111111" class="contacts-list__contact"
-         >+48 111 111 111</a
-        >
-       </li>
-      </div>
-     </ul>
+     <div class="header-bar__contacts">
+      <ul class="header-bar__contacts-list">
+       <div class="header-bar__mail-box">
+        <a href="#" class="header-bar__mail-box--focus">
+         <svg class="header-bar__mail-icon" width="16px" height="12px">
+          <use href="./images/icons.svg#icon-mail"></use>
+         </svg>
+        </a>
+        <li>
+         <a href="mailto:info@devstudio.com" class="contacts-list__contact">
+          info@devstudio.com</a
+         >
+        </li>
+       </div>
+       <div class="header-bar__tel-box">
+        <a href="#" class="header-bar__tel-box--focus">
+         <svg class="header-bar__tel-icon" width="10x" height="16px">
+          <use href="./images/icons.svg#icon-smartphone"></use>
+         </svg>
+        </a>
+        <li>
+         <a href="tel:+48111111111" class="contacts-list__contact"
+          >+48 111 111 111</a
+         >
+        </li>
+       </div>
+      </ul>
+     </div>
+     <div class="header-bar__modal-box">
+      <button class="header-bar__modal-btn">
+       <svg width="24" height="16" class="modal-btn__svg">
+        <use href="./images/icons.svg#icon-menu"></use>
+       </svg>
+      </button>
+     </div>
     </div>
    </div>
   </header>

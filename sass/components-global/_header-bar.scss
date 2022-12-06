@@ -33,6 +33,19 @@
  font-weight: 500;
  line-height: 1, 14em;
 }
+.header-bar__list-pages {
+ .link:focus {
+  color: $blue-color;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+ }
+ .link:hover {
+  color: $blue-color;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+ }
+}
+
 /*--- contacts-stg ---*/
 /*... icons-stg ...*/
 .header-bar {
@@ -130,10 +143,132 @@
 }
 /*------*/
 /*---> mobile-set <---*/
-/*--- display-none ---*/
-.header-bar__navigation {
- display: none;
+/*... display-none ...*/
+@media screen and (min-width: 360px) and (max-width: 767px) {
+ .header-bar__navigation {
+  display: none;
+ }
+ .header-bar__contacts {
+  display: none;
+ }
 }
-.header-bar__container-mobile {
- display: none;
+/*---> tablet-set <---*/
+/*... display-set ...*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+ .header-bar__modal-box {
+  display: none;
+ }
+}
+/*--- navigation-set ---*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+ .header-bar__list-pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  .list-pages--index {
+   position: relative;
+   &::after {
+    content: "";
+    width: 58px;
+    height: 4px;
+    bottom: 0%;
+    top: 46px;
+    left: 3px;
+    border-radius: 5px;
+    background-color: $blue-color;
+    position: absolute;
+   }
+  }
+  .list-pages--portfolio {
+   position: relative;
+   &::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    bottom: 0%;
+    top: 46px;
+    left: 1px;
+    border-radius: 5px;
+    background-color: $blue-color;
+    position: absolute;
+   }
+  }
+ }
+}
+/*--- contacts-set ---*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+ .header-bar__contacts-list {
+  display: flex;
+  flex-direction: column;
+ }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+ .header-bar__tel-box {
+  display: flex;
+  align-items: center;
+ }
+ .header-bar__mail-box {
+  display: flex;
+  align-items: center;
+ }
+}
+/*---> PC-set <---*/
+/*... display-set ...*/
+@media screen and (min-width: 1200px) {
+ .header-bar__modal-box {
+  display: none;
+ }
+}
+/*--- navigation-set ---*/
+@media screen and (min-width: 1200px) {
+ .header-bar__list-pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  .list-pages--index {
+   position: relative;
+   &::after {
+    content: "";
+    width: 58px;
+    height: 4px;
+    bottom: 0%;
+    top: 46px;
+    left: 1px;
+    border-radius: 5px;
+    background-color: $blue-color;
+    position: absolute;
+   }
+  }
+  .list-pages--portfolio {
+   position: relative;
+   &::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    bottom: 0%;
+    top: 46px;
+    left: 1px;
+    border-radius: 5px;
+    background-color: $blue-color;
+    position: absolute;
+   }
+  }
+ }
+}
+/*--- contacts-set ---*/
+@media screen and (min-width: 1200px) {
+ .header-bar__contacts-list {
+  display: flex;
+  gap: 20px;
+  .header-bar__tel-box {
+   display: flex;
+   align-items: center;
+  }
+  .header-bar__mail-box {
+   display: flex;
+   align-items: center;
+  }
+ }
 }
