@@ -1,197 +1,136 @@
-@media screen and (min-width: 480px) and (max-width: 767px) {
- .clients {
+/*--- global-set ---*/
+.clients {
+ display: flex;
+ &__container {
   display: flex;
-  &__header-2 {
-   display: flex;
-  }
-  &__container {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-  }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
  }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
- .clients {
-  &__list {
-   display: grid;
-   gap: 30px;
-  }
-  &__list :nth-child(1) {
-   grid-column: 1;
-   grid-row: 1;
-  }
-  &__list :nth-child(2) {
-   grid-column: 2;
-   grid-row: 1;
-  }
-  &__logo {
-   fill: $icons-grey-color;
-  }
-  &__list--focus {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 170px;
-   height: 92px;
-   border: solid 1px #afb1b8;
-   border-radius: 5px;
-  }
-  &__list--focus:focus {
-   border: 1px solid $blue-color;
+/*--- list-set ---*/
+.clients__list {
+ display: flex;
+ gap: 30px;
+}
+/*--- header-2-set ---*/
+.clients__header-2 {
+ font-weight: 700;
+ font-size: 28px;
+ color: #212121;
+}
+/*--- icons-set ---*/
+.clients__list--focus {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: solid 1px #afb1b8;
+ border-radius: 5px;
+}
+.clients__logo {
+ fill: $icons-grey-color;
+}
+.clients {
+ &__list--focus:hover {
+  border: 1px solid $blue-color;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  .clients__logo {
+   fill: $blue-color;
    transition: cubic-bezier(0.4, 0, 0.2, 1);
    transition-duration: 250ms;
-   outline: none;
   }
-  .clients {
-   &__list--focus:focus {
-    border: 1px solid $blue-color;
-    outline: none;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    .clients__logo {
-     fill: $blue-color;
-     transition: cubic-bezier(0.4, 0, 0.2, 1);
-     transition-duration: 250ms;
-    }
-   }
+ }
+ &__list--focus:focus {
+  border: 1px solid $blue-color;
+  outline: none;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  .clients__logo {
+   fill: $blue-color;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: 250ms;
   }
  }
 }
+
+/*---> mobile-set <---*/
+/*--- list-set ---*/
+@media screen and (min-width: 360px) and (max-width: 767px) {
+ .clients__list {
+  display: grid;
+ }
+ .clients__list--focus {
+  width: 210px;
+  height: 92px;
+ }
+ /*... grid-set ...*/
+ .clients__list a:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+ }
+ .clients__list a:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+ }
+ .clients__list a:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+ }
+ .clients__list a:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+ }
+ .clients__list a:nth-child(5) {
+  grid-column: 1;
+  grid-row: 3;
+ }
+ .clients__list a:nth-child(6) {
+  grid-column: 2;
+  grid-row: 3;
+ }
+}
+/*------*/
+
+/*---> tablet-set <---*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
- .clients {
-  display: flex;
-  &__container {
-   display: flex;
-   flex-direction: column;
-  }
-  &__header-2 {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-  }
-  &__clients-box {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-  }
+ .clients__list {
+  display: grid;
  }
- .clients {
-  &__list {
-   display: grid;
-   align-content: center;
-   justify-content: center;
-   gap: 30px;
-  }
-  &__list :nth-child(1) {
-   grid-column: 1;
-   grid-row: 1;
-  }
-  &__list :nth-child(2) {
-   grid-column: 2;
-   grid-row: 1;
-  }
-  &__list :nth-child(3) {
-   grid-column: 3;
-   grid-row: 1;
-  }
-  &__logo {
-   fill: $icons-grey-color;
-  }
-  &__list--focus {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 170px;
-   height: 92px;
-   border: solid 1px #afb1b8;
-   border-radius: 5px;
-  }
-  &__list--focus:hover {
-   border: 1px solid $blue-color;
-   transition: cubic-bezier(0.4, 0, 0.2, 1);
-   transition-duration: 250ms;
-   .clients__logo {
-    fill: $blue-color;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-   }
-  }
+ .clients__list--focus {
+  width: 226px;
+  height: 92px;
  }
- .clients {
-  &__list--focus:focus {
-   border: 1px solid $blue-color;
-   outline: none;
-   transition: cubic-bezier(0.4, 0, 0.2, 1);
-   transition-duration: 250ms;
-   .clients__logo {
-    fill: $blue-color;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-   }
-  }
+ /*... grid-set ...*/
+ .clients__list a:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+ }
+ .clients__list a:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+ }
+ .clients__list a:nth-child(3) {
+  grid-column: 3;
+  grid-row: 1;
+ }
+ .clients__list a:nth-child(4) {
+  grid-column: 1;
+  grid-row: 2;
+ }
+ .clients__list a:nth-child(5) {
+  grid-column: 2;
+  grid-row: 2;
+ }
+ .clients__list a:nth-child(6) {
+  grid-column: 3;
+  grid-row: 2;
  }
 }
-/*--- PC ---*/
+/*---> PC-set <---*/
 @media screen and (min-width: 1200px) {
- .clients {
-  display: flex;
-  &__container {
-   width: 1170px;
-  }
-  &__header-2 {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-  }
-  &__clients-box {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-  }
- }
- .clients {
-  &__list {
-   display: inline-flex;
-   align-content: center;
-   justify-content: center;
-   gap: 30px;
-  }
-  &__logo {
-   fill: $icons-grey-color;
-  }
-  &__list--focus {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 170px;
-   height: 92px;
-   border: solid 1px #afb1b8;
-   border-radius: 5px;
-  }
-  &__list--focus:hover {
-   border: 1px solid $blue-color;
-   transition: cubic-bezier(0.4, 0, 0.2, 1);
-   transition-duration: 250ms;
-   .clients__logo {
-    fill: $blue-color;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-   }
-  }
- }
- .clients {
-  &__list--focus:focus {
-   border: 1px solid $blue-color;
-   outline: none;
-   transition: cubic-bezier(0.4, 0, 0.2, 1);
-   transition-duration: 250ms;
-   .clients__logo {
-    fill: $blue-color;
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-   }
-  }
+ .clients__list--focus {
+  width: 170px;
+  height: 92px;
  }
 }
