@@ -45,7 +45,6 @@
   transition-duration: 250ms;
  }
 }
-
 /*--- contacts-stg ---*/
 /*... icons-stg ...*/
 .header-bar {
@@ -142,6 +141,7 @@
  }
 }
 /*------*/
+
 /*---> mobile-set <---*/
 /*... display-none ...*/
 @media screen and (min-width: 360px) and (max-width: 767px) {
@@ -152,6 +152,8 @@
   display: none;
  }
 }
+/*------*/
+
 /*---> tablet-set <---*/
 /*... display-set ...*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -213,6 +215,8 @@
   align-items: center;
  }
 }
+/*------*/
+
 /*---> PC-set <---*/
 /*... display-set ...*/
 @media screen and (min-width: 1200px) {
@@ -272,3 +276,4 @@
   }
  }
 }
+/*------*/
