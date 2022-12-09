@@ -1,3 +1,4 @@
+/*--- global-set ---*/
 .products {
  display: flex;
  justify-content: center;
@@ -8,27 +9,30 @@
   align-items: center;
   ul {
    display: flex;
-   flex-wrap: wrap;
    gap: 30px;
    padding: 0;
-   flex-basis: calc((100% - 60px) * 3);
   }
  }
- &__header-3 {
-  font-weight: 700;
-  line-height: 2em;
-  margin-bottom: 20px;
-  margin-top: 0;
- }
- &__text {
-  color: $text-color-g;
-  line-height: 1, 85em;
-  margin-top: 0px;
- }
 }
+/*--- header-3-set ---*/
+.products_header-3 {
+ font-weight: 700;
+ line-height: 2em;
+ margin-bottom: 20px;
+ margin-top: 0;
+}
+/*--- text-set ---*/
+.products__text {
+ color: $text-color-g;
+ line-height: 1, 85em;
+ margin-top: 0px;
+}
+/*--- image-set ---*/
 .products {
  &__image {
   margin: 0px;
+  display: inline-flex;
+  flex-direction: column;
   img {
    display: block;
   }
@@ -44,6 +48,7 @@
   }
  }
 }
+/*--- overlay-set ---*/
 .products {
  &__overlay-box {
   position: relative;
@@ -75,3 +80,56 @@
   border-top: none;
  }
 }
+
+/*---> mobile-set <---*/
+/*--- global-set ---*/
+@media screen and (min-width: 360px) and (max-width: 767px) {
+ .products {
+  padding-top: 0%;
+ }
+ .products__list {
+  flex-direction: column;
+ }
+}
+/*--- image-set ---*/
+@media screen and (min-width: 360px) and (max-width: 767px) {
+ .products__overlay-box {
+  width: 450px;
+ }
+}
+
+/*---> tablet-set <---*/
+/*--- global-set <---*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+ .products__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 60px) * 1);
+  align-items: center;
+  justify-content: center;
+ }
+ .products__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+}
+/*------*/
+
+/*---> PC-set <---*/
+/*--- global-set ---*/
+@media screen and (min-width: 1200px) {
+ .products__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 60px) * 3);
+  align-items: center;
+  justify-content: center;
+ }
+ .products__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+}
+/*------*/

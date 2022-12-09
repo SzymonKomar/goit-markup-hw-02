@@ -183,6 +183,12 @@
   align-items: center;
   justify-content: center;
  }
+ .footer-bar {
+  &__button-box {
+   padding-left: 0%;
+   margin-top: 20px;
+  }
+ }
 }
 /*------*/
 

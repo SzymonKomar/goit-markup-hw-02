@@ -1,8 +1,8 @@
+/*--- global-set ---*/
 .buttons {
  display: flex;
  justify-content: center;
  padding: 0px;
- margin-top: 94px;
  margin-bottom: 34px;
  &__container {
   display: flex;
@@ -16,6 +16,7 @@
   }
  }
 }
+/*--- buttons-set ---*/
 .buttons {
  &__button {
   background-color: $grey-b-color;
@@ -40,5 +41,35 @@
   background-color: $blue-color;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+ }
+}
+
+/*---> mobile-set <---*/
+/*--- global-set ---*/
+@media screen and (min-width: 360px) and (max-width: 767px) {
+ .buttons {
+  margin-top: 60px;
+ }
+ .buttons__container {
+  ul {
+   display: flex;
+   flex-wrap: wrap;
+   flex-basis: calc((100% - 16px) * 3);
+   justify-content: flex-start;
+  }
+ }
+}
+/*------*/
+/*---> tablet-set <---*/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+ .buttons {
+  margin-top: 60px;
+ }
+}
+/*------*/
+/*---> PC-set ---*/
+@media screen and (min-width: 1200px) {
+ .buttons {
+  margin-top: 94px;
  }
 }
