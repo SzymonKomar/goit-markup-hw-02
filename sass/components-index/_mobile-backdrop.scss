@@ -1,0 +1,129 @@
+/*--- global-set ---*/
+.modal-mobile {
+ background-color: $white-color;
+ position: absolute;
+ width: 480px;
+ height: 796px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+/*--- navigation-set ---*/
+.modal-mobile {
+ &__navigation {
+  display: flex;
+  flex-direction: column;
+  padding-right: 250px;
+  padding-top: 48px;
+  gap: 36px;
+  a:focus {
+   color: $blue-color;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: 250ms;
+   outline: none;
+  }
+  a:active {
+   outline: 0px solid $white-color;
+   background-color: $white-color;
+   transition: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: 250ms;
+   p {
+    background-color: $white-color;
+    color: $blue-color;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+   }
+  }
+ }
+ &__p {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 46.88px;
+  margin: 0;
+ }
+}
+/*--- contacts-set ---*/
+.modal-mobile {
+ position: relative;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ &__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  padding-right: 170px;
+ }
+ &__contact-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 39.84px;
+  padding-left: 20px;
+  width: 280px;
+ }
+ &__contact-mail {
+  font-weight: 500;
+  font-size: 24px;
+  width: 240px;
+  padding-left: 2px;
+  p {
+   color: $text-color-g;
+   margin: 0;
+  }
+ }
+ .modal-mobile__contact-tel {
+  p {
+   color: $blue-color;
+   margin: 0;
+   padding-bottom: 32px;
+  }
+ }
+}
+/*--- social-set ---*/
+.modal-mobile {
+ &__socials {
+  padding-bottom: 48px;
+  display: flex;
+  padding-right: 50px;
+ }
+ &__social {
+  p {
+   color: $blue-color;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 22px;
+   padding-right: 10px;
+   padding-left: 10px;
+   margin: 0%;
+  }
+ }
+}
+/*--- button-set ---*/
+.modal-mobile {
+ &__button {
+  position: absolute;
+  right: 0px;
+  margin-right: 15px;
+  margin-top: 10px;
+  border: 0px solid;
+  width: 40px;
+  height: 40px;
+  background-color: $white-color;
+  border-radius: 5px;
+ }
+ &__button:focus {
+  outline: none;
+  fill: $blue-color;
+  background-color: $white-color;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+ }
+ &__button:active {
+  outline: none;
+  fill: $blue-color;
+  background-color: $white-color;
+ }
+}

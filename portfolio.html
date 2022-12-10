@@ -67,7 +67,13 @@
      </div>
      <div class="header-bar__modal-box">
       <button class="header-bar__modal-btn">
-       <svg width="24" height="16" class="modal-btn__svg">
+       <svg
+        width="24"
+        height="16"
+        class="modal-btn__svg"
+        type="submit"
+        data-modal-mobile-open
+       >
         <use href="./images/icons.svg#icon-menu"></use>
        </svg>
       </button>
@@ -431,5 +437,34 @@
     </div>
    </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal-mobile>
+   <div class="modal-mobile">
+    <div class="modal-mobile__navigation">
+     <a href="index.html"><p class="modal-mobile__p">Agencja</p></a>
+     <a href="portfolio.html"><p class="modal-mobile__p">Portfolio</p></a>
+     <a href="#"><p class="modal-mobile__p">Kontakty</p></a>
+    </div>
+    <div class="modal-mobile__contacts">
+     <a href="tel:+48111111111" class="modal-mobile__contact-tel"
+      ><p>+48 111 111 111</p></a
+     >
+     <a href="mailto:info@devstudio.com" class="modal-mobile__contact-mail">
+      <p>info@devstudio.com</p>
+     </a>
+    </div>
+    <div class="modal-mobile__socials">
+     <a href="#" class="modal-mobile__social"><p>Instagram</p> </a> |
+     <a href="#" class="modal-mobile__social"><p>Twitter</p> </a> |
+     <a href="#" class="modal-mobile__social"><p>Facebook</p> </a> |
+     <a href="#" class="modal-mobile__social"><p>Linkedin</p></a>
+    </div>
+    <button class="modal-mobile__button" data-modal-mobile-close>
+     <svg width="11px" height="11px">
+      <use href="./images/icons.svg#icon-x-button"></use>
+     </svg>
+    </button>
+   </div>
+  </div>
+  <script src="./js/modal-mobile.js"></script>
  </body>
 </html>
