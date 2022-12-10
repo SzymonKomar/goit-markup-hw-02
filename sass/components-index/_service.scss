@@ -42,7 +42,7 @@
 /*--- background ---*/
 @media screen and (min-width: 360px) and (max-width: 767px) {
  .service {
-  background-image: url(../images/background-mobile.jpg);
+  background-image: url(/images/background-mobile.jpg);
   background-size: cover;
   height: 400px;
   background-color: rgba(47, 48, 58, 0.4);
@@ -53,7 +53,7 @@
 /*--- background ---*/
 @media screen and (min-width: 767px) and (max-width: 1199px) {
  .service {
-  background-image: url(../images/background-tablet.jpg);
+  background-image: url(/images/background-tablet.jpg);
   background-size: cover;
   height: 400px;
   background-color: rgba(47, 48, 58, 0.4);
@@ -65,7 +65,7 @@
 @media screen and (min-width: 1200px) {
  .service {
   height: 600px;
-  background-image: url(../images/background.jpg);
+  background-image: url(/images/background.jpg);
   background-color: rgba(47, 48, 58, 0.4);
   background-size: cover;
   background-blend-mode: multiply;
