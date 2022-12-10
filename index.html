@@ -184,12 +184,21 @@
       <ul class="team__list-images">
        <li>
         <figure class="team__image">
-         <img
-          src="images/productdesigner1.jpg"
-          alt="Product Designer"
-          width="270"
-          height="260"
-         />
+         <picture>
+          <source
+           media="(max-width: 767px)"
+           srcset="./images/productdesigner-mobile.jpg"
+          />
+          <source
+           media="(max-width: 1199px)"
+           srcset="./images/productdesigner-tablet.jpg"
+          />
+          <source
+           media="(min-width: 1200px)"
+           srcset="./images/productdesigner1.jpg"
+          />
+          <img src="images/productdesigner1.jpg" alt="Product Designer" />
+         </picture>
          <figcaption class="team__image-caption">
           <h1 class="team__image-header-1">John Doe</h1>
           <p class="team__image-text">Product designer</p>
@@ -220,12 +229,22 @@
        </li>
        <li>
         <figure class="team__image">
-         <img
-          src="images/frontenddev2.jpg"
-          alt="Front End Developer"
-          width="270"
-          height="260"
-         />
+         <picture>
+          <img src="images/frontenddev2.jpg" alt="Front End Developer" />
+          <source
+           media="(max-width: 767px)"
+           srcset="./images/frontenddev-mobile.jpg"
+          />
+          <source
+           media="(max-width: 1199px)"
+           srcset="./images/frontenddev-tablet.jpg"
+          />
+          <source
+           media="(min-width: 1200px)"
+           srcset="./images/frontenddev2.jpg"
+          />
+         </picture>
+
          <figcaption class="team__image-caption">
           <h1 class="team__image-header-1">Jane Doe</h1>
           <p class="team__image-text">Frontend Developer</p>
@@ -256,12 +275,21 @@
        </li>
        <li>
         <figure class="team__image">
-         <img
-          src="images/marketing3.jpg"
-          alt="Head of Marketing"
-          width="270"
-          height="260"
-         />
+         <picture>
+          <img src="images/marketing3.jpg" alt="Head of Marketing" />
+          <source
+           media="(max-width: 767px)"
+           srcset="./images/marketing-mobile.jpg"
+          />
+          <source
+           media="(max-width: 1199px)"
+           srcset="./images/marketing-tablet.jpg"
+          />
+          <source
+           media="(min-width: 1200px)"
+           srcset="./images/marketing3.jpg"
+          />
+         </picture>
          <figcaption class="team__image-caption">
           <h1 class="team__image-header-1">John Doe</h1>
           <p class="team__image-text">Marketing</p>
@@ -292,12 +320,21 @@
        </li>
        <li>
         <figure class="team__image">
-         <img
-          src="images/uidesigner4.jpg"
-          alt="UI Designer"
-          width="270"
-          height="260"
-         />
+         <picture>
+          <img src="images/uidesigner4.jpg" alt="UI Designer" />
+          <source
+           media="(max-width: 767px)"
+           srcset="./images/uidesigner-mobile.jpg"
+          />
+          <source
+           media="(max-width: 1199px)"
+           srcset="./images/uidesigner-tablet.jpg"
+          />
+          <source
+           media="(min-width: 1200px)"
+           srcset="./images/uidesigner4.jpg"
+          />
+         </picture>
          <figcaption class="team__image-caption">
           <h1 class="team__image-header-1">John Doe</h1>
           <p class="team__image-text">UI Designer</p>

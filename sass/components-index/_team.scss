@@ -134,3 +134,11 @@
 /*------*/
 
 /*--- PC-set ---*/
+@media screen and (min-width: 1200px) {
+ .team__image {
+  img {
+   width: 270px;
+   height: 260px;
+  }
+ }
+}
